@@ -1,5 +1,5 @@
 const questions = [{
-    title: "?",
+    title: "Question 1",
     option: [
       "a",
       "b",
@@ -9,14 +9,14 @@ const questions = [{
     correctAnswer: "a"
   },
   {
-    title: "?",
+    title: "Question 2",
     option: [
       "a",
       "b",
       "c",
       "d"
     ],
-    correctAnswer: "a"
+    correctAnswer: "Question"
   }, {
     title: "?",
     option: [
@@ -25,7 +25,7 @@ const questions = [{
       "c",
       "d"
     ],
-    correctAnswer: "a"
+    correctAnswer: "Question"
   }, {
     title: "?",
     option: [
@@ -34,7 +34,7 @@ const questions = [{
       "c",
       "d"
     ],
-    correctAnswer: "a"
+    correctAnswer: "Question"
   }, {
     title: "?",
     option: [
@@ -48,12 +48,18 @@ const questions = [{
 ];
 
 function showQuestion() {
-  let questionTitle = questions.title;
-  let answers = questions.option;
-  let correct = questions.correctAnswer;
+  let questionTitle = questions[0].title;
+  let questionOptions = questions[0].option;
+  let answers = document.getElementsByClassName('options');
 
+  // add question title to html div
   let title = document.getElementById('question');
-  title.textContent = `"The question is ${questionTitle}`;
+  title.textContent = questionTitle;
+
+  // NEEDS FIXING Iterate through options to give li elements the options
+  for (let i = 0; i < questionOptions.Length; i++) {
+    answers.textContent = questionOptions;
+}
 }
 
-console.log(showQuestion());
+showQuestion();

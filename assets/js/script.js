@@ -1,11 +1,11 @@
 const questions = [{
-      title: "?",
-      option: [
+    title: "?",
+    option: [
       "a",
       "b",
       "c",
       "d"
-      ],
+    ],
     correctAnswer: "a"
   },
   {
@@ -15,7 +15,7 @@ const questions = [{
       "b",
       "c",
       "d"
-      ],
+    ],
     correctAnswer: "a"
   }, {
     title: "?",
@@ -24,7 +24,7 @@ const questions = [{
       "b",
       "c",
       "d"
-      ],
+    ],
     correctAnswer: "a"
   }, {
     title: "?",
@@ -33,7 +33,7 @@ const questions = [{
       "b",
       "c",
       "d"
-      ],
+    ],
     correctAnswer: "a"
   }, {
     title: "?",
@@ -42,11 +42,18 @@ const questions = [{
       "b",
       "c",
       "d"
-      ],
+    ],
     correctAnswer: "a"
-  }, ];
+  },
+];
 
-let question = document.getElementById('title');
-question.textContent = questions.title;
+function showQuestion() {
+  let questionTitle = questions.title;
+  let answers = questions.option;
+  let correct = questions.correctAnswer;
 
+  let title = document.getElementById('question');
+  title.textContent = `"The question is ${questionTitle}`;
+}
 
+console.log(showQuestion());

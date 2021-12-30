@@ -46,7 +46,7 @@ const questions = [{
     correctAnswer: "a"
   }, ];
 
-for (question of questions) {
-  console.log(questions);
-}
+let question = document.getElementById('title');
+question.textContent = questions.title;
+
 

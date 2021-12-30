@@ -1,47 +1,47 @@
 const questions = [
   {
-    q1: "?",
-    answer1: {
-      a: "a",
-      b: "b",
-      c: "c",
-      d: "d"
+    title: "?",
+    option: {
+      1: "a",
+      2: "b",
+      3: "c",
+      4: "d"
     },
     correctAnswer: "a"
   },
   {
-    q2: "?",
-    answer2: {
-  a: "a",
-  b: "b",
-  c: "c",
-  d: "d"
+    title: "?",
+    option: {
+      1: "a",
+      2: "b",
+      3: "c",
+      4: "d"
   },
   correctAnswer: "a"
 },
 {
-  q3: "?",
-  answer3: {
-a: "a",
-b: "b",
-c: "c",
-d: "d"
+  title: "?",
+  option: {
+    1: "a",
+    2: "b",
+    3: "c",
+    4: "d"
 },
 correctAnswer: "a"
 },
 {
-  q4: "?",
-  answer4: {
-a: "a",
-b: "b",
-c: "c",
-d: "d"
+  title: "?",
+  option: {
+    1: "a",
+    2: "b",
+    3: "c",
+    4: "d"
 },
 correctAnswer: "a"
 },
 {
-  q5: "?",
-  answer5: {
+  title: "?",
+  option: {
 a: "a",
 b: "b",
 c: "c",

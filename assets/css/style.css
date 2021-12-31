@@ -5,17 +5,17 @@
   text-align: center;
   background-color: black;
   color: whitesmoke;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 h1 {
+  width: 70%;
+  margin: 0 auto;
   font-size: xx-large;
   padding: 10px 0px 10px;
   border-bottom: 2px solid whitesmoke;
-  border-radius: 10%;
   border-top: 2px solid whitesmoke;
+  border-radius: 10%;
+  max-width: 416.5px;
 }
 
 h2 {
@@ -30,7 +30,11 @@ p {
 }
 
 #container {
-  margin: 5%;
+  width: 100%;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  border: 0;
+  padding: 0px;
   height: 60%;
   position: absolute;
   top: 20%;

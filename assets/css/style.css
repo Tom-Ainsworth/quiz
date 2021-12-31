@@ -2,5 +2,22 @@
 
 * {
   font-family: 'EB Garamond', serif;
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+p {
+  font-size: medium;
+  margin: 0 auto;
+  padding: 20px;
 }
 

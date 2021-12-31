@@ -5,14 +5,22 @@
   text-align: center;
   background-color: black;
   color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 h1 {
   font-size: xx-large;
+  padding: 10px 0px 10px;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 10%;
+  border-top: 2px solid whitesmoke;
 }
 
 h2 {
   font-size: x-large;
+  padding: 20px 0px;
 }
 
 p {
@@ -21,3 +29,10 @@ p {
   padding: 20px;
 }
 
+#container {
+  margin: 5%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+}

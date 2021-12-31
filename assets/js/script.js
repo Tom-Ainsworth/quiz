@@ -52,14 +52,9 @@ function showQuestion() {
   let questionOptions = questions[0].option;
   let answers = document.getElementsByClassName('options');
 
-  // add question title to html div
+  // add question title to html div NEEDS Changing to allow other elements to sit inside the div
   let title = document.getElementById('question');
   title.textContent = questionTitle;
-
-  // NEEDS FIXING Iterate through options to give li elements the options
-  for (let i = 0; i < questionOptions.Length; i++) {
-    answers.textContent = questionOptions;
+  answers.textContent = questionOptions;
+  
 }
-}
-
-showQuestion();

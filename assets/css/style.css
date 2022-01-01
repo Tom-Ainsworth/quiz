@@ -5,13 +5,17 @@
   text-align: center;
   background-color: black;
   color: whitesmoke;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
 h1 {
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
   font-size: xx-large;
-  padding: 10px 0px 10px;
+  padding: 10px 0px;
   border-bottom: 2px solid whitesmoke;
   border-top: 2px solid whitesmoke;
   border-radius: 10%;
@@ -31,12 +35,10 @@ p {
 
 #container {
   width: 100%;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
   border: 0;
   padding: 0px;
-  height: 60%;
+  height: 100%;
   position: absolute;
-  top: 20%;
-  bottom: 20%;
+  border: 3px solid whitesmoke;
+  box-sizing: border-box;
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
+/* General element styles */
 * {
   font-family: 'EB Garamond', serif;
   text-align: center;
@@ -8,6 +9,7 @@
   margin: 0px;
   border: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
 h1 {
@@ -37,7 +39,9 @@ p span {
   font-weight: 800;
   font-style: italic;
 }
+/* End of General element styles */
 
+/* Border Styling */
 #border-outer, #quiz-page {
   border: 2px solid #000;
   box-sizing: border-box;
@@ -56,6 +60,7 @@ p span {
   position: relative;
   padding: 5px;
 }
+
 .text-container {
   border: 2px solid #DC9104;
   box-sizing: border-box;
@@ -65,8 +70,16 @@ p span {
   position: relative;
   padding: 5px;
 }
+/* End of Border Styling */
 
-#quiz-link {
+/* Button/Link Styling */
+#btn-start-quiz:hover {
+  color: #020413;
+  background-color: #ffd700;
+  font-size: 27px;
+}
+
+#btn-start-quiz {
   color: #ffd700;
   margin-top: 5px;
   padding: 8px 10px;
@@ -76,8 +89,32 @@ p span {
   border-radius: 10px;
 }
 
-#quiz-link:hover {
-  color: #020413;
-  background-color: #ffd700;
-  font-size: 30px;
+.quiz-btn {
+  color: #ffd700;
+  margin: 5px 5px;
+  padding: 8px 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 3px solid #ffd700;
+  border-radius: 10px;
+  position: relative;
 }
+
+#menu-btn-div {
+  margin-top: 10px;
+}
+/* End of Button/Link Styling */
+
+/* Quiz Specific Styling */
+#question-options li {
+  width: 60%;
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 20px auto;
+  padding: 8px 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 3px solid #ffd700;
+  border-radius: 10px;
+}
+

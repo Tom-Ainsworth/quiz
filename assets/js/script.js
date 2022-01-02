@@ -59,7 +59,12 @@ function initiateQuiz() {
   let answers = document.getElementById('answer-options');
 
   currentQuestion.innerHTML = `${questionTitle}`;
-  answers.innerHTML = `<li>${questionOptions[0]}</li> <li>${questionOptions[1]}</li> <li>${questionOptions[2]}</li> <li>${questionOptions[3]}</li>`;
+  answers.innerHTML = `
+    <li>${questionOptions[0]}</li>
+    <li>${questionOptions[1]}</li>
+    <li>${questionOptions[2]}</li>
+    <li>${questionOptions[3]}</li>
+    `;
 };
 
 

@@ -44,7 +44,13 @@ const answers = document.getElementById('answer-options');
 const sumbitAnswer = document.getElementById('btn-confirm-choice');
 const previousQuestion = document.getElementById('previous-queston');
 const lastQuestion = questions.length - 1;
+
+// Question & Score counters
 let runningQuestion = 0;
+let gryffindorScore = 0;
+let hufflepuffScore = 0;
+let ravenclawScore = 0;
+let slytherinScore = 0;
 /**
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
@@ -55,15 +61,18 @@ function showQuestion() {
   currentQuestion.innerHTML = q.title;
 
   a.innerHTML = `
-    <li>${q.optionA}</li>
-    <li>${q.optionB}</li>
-    <li>${q.optionC}</li>
-    <li>${q.optionD}</li>
+    <li id="optionA">${q.optionA}</li>
+    <li id="optionB">${q.optionB}</li>
+    <li id="optionC">${q.optionC}</li>
+    <li id="optionD">${q.optionD}</li>
     `;
 
     runningQuestion++;
 };
 
+/**
+ * On clicking the submit button, this will check which answer was entered, and load the next question
+ */
 function nextQuestion() {
   checkAnswer();
 

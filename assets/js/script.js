@@ -1,62 +1,66 @@
 // Array of quiz questions
 const questions = [{
-    title: "Question 1",
-    option: [
-      "a",
-      "b",
-      "c",
-      "d"
-    ],
-    correctAnswer: "a"
-  },
-  {
-    title: "Question 2",
-    option: [
-      "e",
-      "f",
-      "g",
-      "h"
-    ],
-    correctAnswer: "e"
-  }, {
-    title: "Question 3",
-    option: [
-      "i",
-      "j",
-      "k",
-      "l"
-    ],
-    correctAnswer: "i"
-  }, {
-    title: "Question 4",
-    option: [
-      "m",
-      "n",
-      "o",
-      "p"
-    ],
-    correctAnswer: "m"
-  }, {
-    title: "Question 5",
-    option: [
-      "q",
-      "r",
-      "s",
-      "t"
-    ],
-    correctAnswer: "r"
-  },
+  title: "Question 1",
+  option: [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  correctAnswer: "a"
+},
+{
+  title: "Question 2",
+  option: [
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  correctAnswer: "e"
+}, {
+  title: "Question 3",
+  option: [
+    "i",
+    "j",
+    "k",
+    "l"
+  ],
+  correctAnswer: "i"
+}, {
+  title: "Question 4",
+  option: [
+    "m",
+    "n",
+    "o",
+    "p"
+  ],
+  correctAnswer: "m"
+}, {
+  title: "Question 5",
+  option: [
+    "q",
+    "r",
+    "s",
+    "t"
+  ],
+  correctAnswer: "r"
+},
 ];
 
+// Global variables for html elements
+const currentQuestion = document.getElementById('current-question');
+const answers = document.getElementById('answer-options');
+const sumbitAnswer = document.getElementById('btn-confirm-choice');
+const previousQuestion = document.getElementById('previous-queston');
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
 /**
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function initiateQuiz() {
   let questionTitle = questions[0].title;
   let questionOptions = questions[0].option;
-  let currentQuestion = document.getElementById('current-question');
-  document.getElementById
-  let answers = document.getElementById('answer-options');
 
   currentQuestion.innerHTML = `${questionTitle}`;
   answers.innerHTML = `
@@ -66,6 +70,10 @@ function initiateQuiz() {
     <li>${questionOptions[3]}</li>
     `;
 };
+
+function nextQuestion() {
+  
+}
 
 
 window.onload = () => {

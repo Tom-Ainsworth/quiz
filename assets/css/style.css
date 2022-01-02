@@ -112,7 +112,7 @@ p span {
 /* End of Button/Link Styling */
 
 /* Quiz Specific Styling */
-#answer-options li {
+#answer-options label {
   width: 60%;
   color: #ffffff;
   text-decoration: underline;
@@ -124,7 +124,7 @@ p span {
   border-radius: 10px;
 }
 
-#answer-options li:hover {
+#answer-options label:active {
   color: #000000;
   background-color: #ffd700;
 }

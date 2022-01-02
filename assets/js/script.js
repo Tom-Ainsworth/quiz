@@ -47,6 +47,7 @@ const lastQuestion = questions.length - 1;
 
 // Question & Score counters
 let runningQuestion = 0;
+
 let gryffindorScore = 0;
 let hufflepuffScore = 0;
 let ravenclawScore = 0;
@@ -60,11 +61,20 @@ function showQuestion() {
 
   currentQuestion.innerHTML = q.title;
 
+  // Inject template HTML into the DOM
   a.innerHTML = `
-    <li id="optionA">${q.optionA}</li>
-    <li id="optionB">${q.optionB}</li>
-    <li id="optionC">${q.optionC}</li>
-    <li id="optionD">${q.optionD}</li>
+  <label for="optionA">${q.optionA}</label>
+  <input type="radio" id="optionA" name="answer" value="${q.optionA}">
+  <br></br>
+<label for="optionB">${q.optionB}</label>
+  <input type="radio" id="optionB" name="answer" value="${q.optionB}">
+  <br></br>
+<label for="optionC">${q.optionC}</label>
+  <input type="radio" id="optionC" name="answer" value="${q.optionC}">
+  <br></br>
+<label for="optionD">${q.optionD}</label>
+  <input type="radio" id="optionD" name="answer" value="${q.optionD}">
+  <br></br>
     `;
 
     runningQuestion++;

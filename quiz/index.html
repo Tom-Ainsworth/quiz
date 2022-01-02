@@ -23,19 +23,23 @@
       <div class="text-container">
         <!-- Empty h1 to be populated by question title from Javascript -->
         <h1 id="current-question"></h1>
-        <ul id="answer-options">
+        <form >
+          <fieldset id="answer-options">
           <!-- Empty list to be populated by question options in Javascript -->
-        </ul>
-        <button onclick="nextQuestion()" id="btn-confirm-choice" class="quiz-btn">Submit</button>
+          <button id="previous-question-btn" class="quiz-btn">Back</button>
+        </fieldset>
+        </form>
+
+        <button onclick="nextQuestion()" id="btn-submit" class="quiz-btn">Submit</button>
         <div id="menu-btn-div">
           <a id="menu-btn" class="quiz-btn" href="../index.html">Menu</a>
-          <button id="previous-question-btn" class="quiz-btn">Back</button>
+          
         </div>
 
       </div>
     </div>
   </section>
-  
+
   <script src="../assets/js/script.js"></script>
 
 </body>

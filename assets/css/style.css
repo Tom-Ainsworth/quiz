@@ -101,6 +101,11 @@ p span {
   position: relative;
 }
 
+.quiz-btn:hover {
+  color: #000000;
+  background-color: #ffd700;
+}
+
 #menu-btn-div {
   margin-top: 10px;
 }
@@ -119,3 +124,7 @@ p span {
   border-radius: 10px;
 }
 
+#question-options li:hover {
+  color: #000000;
+  background-color: #ffd700;
+}

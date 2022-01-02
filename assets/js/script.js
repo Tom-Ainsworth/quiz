@@ -1,51 +1,41 @@
 // Array of quiz questions
 const questions = [{
-  title: "Question 1",
-  option: [
-    "a",
-    "b",
-    "c",
-    "d"
-  ],
-  correctAnswer: "a"
-},
-{
-  title: "Question 2",
-  option: [
-    "e",
-    "f",
-    "g",
-    "h"
-  ],
-  correctAnswer: "e"
-}, {
-  title: "Question 3",
-  option: [
-    "i",
-    "j",
-    "k",
-    "l"
-  ],
-  correctAnswer: "i"
-}, {
-  title: "Question 4",
-  option: [
-    "m",
-    "n",
-    "o",
-    "p"
-  ],
-  correctAnswer: "m"
-}, {
-  title: "Question 5",
-  option: [
-    "q",
-    "r",
-    "s",
-    "t"
-  ],
-  correctAnswer: "r"
-},
+    title: "Question 1",
+    optionA: "a",
+    optionB: "b",
+    optionC: "c",
+    optionD: "d",
+    correctAnswer: "a"
+  },
+  {
+    title: "Question 2",
+    optionA: "e",
+    optionB: "f",
+    optionC: "g",
+    optionD: "h",
+    correctAnswer: "e"
+  }, {
+    title: "Question 3",
+    optionA: "i",
+    optionB: "j",
+    optionC: "k",
+    optionD: "l",
+    correctAnswer: "i"
+  }, {
+    title: "Question 4",
+    optionA: "m",
+    optionB: "n",
+    optionC: "o",
+    optionD: "p",
+    correctAnswer: "m"
+  }, {
+    title: "Question 5",
+    optionA: "a",
+    optionB: "b",
+    optionC: "c",
+    optionD: "d",
+    correctAnswer: "r"
+  },
 ];
 
 // Global variables for html elements
@@ -59,20 +49,21 @@ let runningQuestion = 0;
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function initiateQuiz() {
-  let questionTitle = questions[0].title;
-  let questionOptions = questions[0].option;
+  let q = questions[runningQuestion];
+  let a = document.getElementById('answer-options');
 
-  currentQuestion.innerHTML = `${questionTitle}`;
-  answers.innerHTML = `
-    <li>${questionOptions[0]}</li>
-    <li>${questionOptions[1]}</li>
-    <li>${questionOptions[2]}</li>
-    <li>${questionOptions[3]}</li>
+  currentQuestion.innerHTML = q.title;
+
+  a.innerHTML = `
+    <li>${q.optionA}</li>
+    <li>${q.optionB}</li>
+    <li>${q.optionC}</li>
+    <li>${q.optionD}</li>
     `;
 };
 
 function nextQuestion() {
-  
+
 }
 
 

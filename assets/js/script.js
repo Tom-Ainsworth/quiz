@@ -53,7 +53,14 @@ const questions = [{
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function initiateQuiz() {
-  
-}
+  let questionTitle = questions[0].title.value;
 
-window.onload = initiateQuiz();
+  console.log(questionTitle);
+};
+
+window.onload = () => {
+  console.log("The window has laoded!");
+  initiateQuiz();
+};
+
+console.log("The window has laoded!");

@@ -1,4 +1,3 @@
-
 // Array of quiz questions
 const questions = [{
     title: "Question 1",
@@ -53,14 +52,18 @@ const questions = [{
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function initiateQuiz() {
-  let questionTitle = questions[0].title.value;
+  let questionTitle = questions[0].title;
+  let questionOptions = questions[0].option;
+  let currentQuestion = document.getElementById('current-question');
+  document.getElementById
+  let answers = document.getElementById('answer-options');
 
-  console.log(questionTitle);
+  currentQuestion.innerHTML = `${questionTitle}`;
+  answers.innerHTML = `<li>${questionOptions[0]}</li> <li>${questionOptions[1]}</li> <li>${questionOptions[2]}</li> <li>${questionOptions[3]}</li>`;
 };
+
 
 window.onload = () => {
-  console.log("The window has laoded!");
+  console.log("The window has loaded!");
   initiateQuiz();
 };
-
-console.log("The window has laoded!");

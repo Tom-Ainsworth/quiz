@@ -1,3 +1,5 @@
+
+// Array of quiz questions
 const questions = [{
     title: "Question 1",
     option: [
@@ -11,50 +13,47 @@ const questions = [{
   {
     title: "Question 2",
     option: [
-      "a",
-      "b",
-      "c",
-      "d"
+      "e",
+      "f",
+      "g",
+      "h"
     ],
-    correctAnswer: "Question"
+    correctAnswer: "e"
   }, {
-    title: "?",
+    title: "Question 3",
     option: [
-      "a",
-      "b",
-      "c",
-      "d"
+      "i",
+      "j",
+      "k",
+      "l"
     ],
-    correctAnswer: "Question"
+    correctAnswer: "i"
   }, {
-    title: "?",
+    title: "Question 4",
     option: [
-      "a",
-      "b",
-      "c",
-      "d"
+      "m",
+      "n",
+      "o",
+      "p"
     ],
-    correctAnswer: "Question"
+    correctAnswer: "m"
   }, {
-    title: "?",
+    title: "Question 5",
     option: [
-      "a",
-      "b",
-      "c",
-      "d"
+      "q",
+      "r",
+      "s",
+      "t"
     ],
-    correctAnswer: "a"
+    correctAnswer: "r"
   },
 ];
 
-function showQuestion() {
-  let questionTitle = questions[0].title;
-  let questionOptions = questions[0].option;
-  let answers = document.getElementsByClassName('options');
-
-  // add question title to html div NEEDS Changing to allow other elements to sit inside the div
-  let title = document.getElementById('question');
-  title.textContent = questionTitle;
-  answers.textContent = questionOptions;
+/**
+ * When the page first loads, this will populate the quiz area with question 1 and the relevant options
+ */
+function initiateQuiz() {
   
 }
+
+window.onload = initiateQuiz();

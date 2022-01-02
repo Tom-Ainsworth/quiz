@@ -48,7 +48,7 @@ let runningQuestion = 0;
 /**
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
-function initiateQuiz() {
+function showQuestion() {
   let q = questions[runningQuestion];
   let a = document.getElementById('answer-options');
 
@@ -60,14 +60,29 @@ function initiateQuiz() {
     <li>${q.optionC}</li>
     <li>${q.optionD}</li>
     `;
+
+    runningQuestion++;
 };
 
 function nextQuestion() {
+  checkAnswer();
+
+  if (runningQuestion = questions.length) {
+    showResults();
+  } else if (runningQuestion < questions.length) {
+    showQuestion()
+  }
+}
+
+function checkAnswer() {
+  
+}
+
+function showResults() {
 
 }
 
-
 window.onload = () => {
   console.log("The window has loaded!");
-  initiateQuiz();
+  showQuestion();
 };

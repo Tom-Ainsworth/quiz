@@ -65,19 +65,19 @@ function showQuestion() {
   a.innerHTML = `
   <label for="optionA">${q.optionA}</label>
   <input type="radio" id="optionA" name="answer" value="${q.optionA}">
-  <br></br>
-<label for="optionB">${q.optionB}</label>
+  <br>
+  <label for="optionB">${q.optionB}</label>
   <input type="radio" id="optionB" name="answer" value="${q.optionB}">
-  <br></br>
-<label for="optionC">${q.optionC}</label>
+  <br>
+  <label for="optionC">${q.optionC}</label>
   <input type="radio" id="optionC" name="answer" value="${q.optionC}">
-  <br></br>
-<label for="optionD">${q.optionD}</label>
+  <br>
+  <label for="optionD">${q.optionD}</label>
   <input type="radio" id="optionD" name="answer" value="${q.optionD}">
-  <br></br>
+  <br>
     `;
 
-    runningQuestion++;
+  runningQuestion++;
 };
 
 /**
@@ -94,7 +94,7 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
-  
+
 }
 
 function showResults() {

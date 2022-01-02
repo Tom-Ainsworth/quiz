@@ -112,7 +112,7 @@ p span {
 /* End of Button/Link Styling */
 
 /* Quiz Specific Styling */
-#answer-options label {
+#answer-options input, #answer-options label  {
   width: 60%;
   color: #ffffff;
   text-decoration: underline;
@@ -124,7 +124,41 @@ p span {
   border-radius: 10px;
 }
 
-#answer-options label:active {
+#answer-options input:hover {
   color: #000000;
   background-color: #ffd700;
+}
+
+input[type='radio'] {
+  -webkit-appearance:none;
+  width: 60%;
+  height: 48px;
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 20px auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 3px solid #ffd700;
+  border-radius: .25em;
+  outline:none;
+}
+input[type='radio']:hover {
+  color: #000000;
+  background-color: #ffd700;
+}
+input[type='radio']:before {
+  content:'';
+  width:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+input[type='radio']:checked:before {
+  background:#ffd700;
+}
+input[type='radio']:checked:after {
+  background:#ffd700;
+}
+
+label {
+  position: absolute;
 }

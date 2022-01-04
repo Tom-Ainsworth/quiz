@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&display=swap');
 
 /* General element styles */
 * {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   background-color: #000000;
   color: #ffffff;
@@ -14,26 +14,32 @@
 }
 
 h1 {
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
   font-size: 32px;
-  padding: 10px 0px;
-  border-bottom: 2px solid #f5f5f5;
-  border-top: 2px solid #f5f5f5;
-  border-radius: 10%;
+  width: 80%;
   max-width: 416.5px;
+  border-top: 2px solid #f5f5f5;
 }
 
 h2 {
   font-size: 24px;
-  padding: 20px 0px;
+  width: 60%;
+  max-width: 269.4px;
+}
+
+h1, h2 {
+  font-family: 'EB Garamond', serif;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid #f5f5f5;
+  border-radius: 10%;
+  
 }
 
 p {
   font-size: 16px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px 20px 20px;
 }
 
 p span {
@@ -124,7 +130,7 @@ p span {
   border-radius: 10px;
 }
 
-#answer-options input:hover {
+/* #answer-options input:hover {
   color: #000000;
   background-color: #ffd700;
 }
@@ -161,4 +167,9 @@ input[type='radio']:checked:after {
 
 label {
   position: absolute;
-}
+} */
+
+
+/* Button Styling */
+
+/* End of Button Styling */

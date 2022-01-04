@@ -62,19 +62,24 @@ function showQuestion() {
   currentQuestion.innerHTML = q.title;
 
   // Inject template HTML into the DOM
-  a.innerHTML = `
-  <label for="optionA">${q.optionA}</label>
-  <input type="radio" id="optionA" name="answer" value="${q.optionA}">
-  <br>
-  <label for="optionB">${q.optionB}</label>
-  <input type="radio" id="optionB" name="answer" value="${q.optionB}">
-  <br>
-  <label for="optionC">${q.optionC}</label>
-  <input type="radio" id="optionC" name="answer" value="${q.optionC}">
-  <br>
-  <label for="optionD">${q.optionD}</label>
-  <input type="radio" id="optionD" name="answer" value="${q.optionD}">
-  <br>
+  a.innerHTML = `  
+    <input class="answer-option" type="radio" name="answers" id="option-1" checked>
+    <label class="answer-option" for="option-1">
+      <span data-hover="Answer 1">Answer 1</span>
+    </label><!-- -->
+    <input class="answer-option" type="radio" name="answers" id="option-2">
+    <label class="answer-option" for="option-2">							
+      <span data-hover="Answer 2">Answer 2</span>
+    </label><!--
+                -->
+    <input class="answer-option" type="radio" name="answers" id="option-3" checked>
+    <label class="answer-option" for="option-3">
+      <span data-hover="Answer 3">Answer 3</span>
+    </label>
+    <input class="answer-option" type="radio" name="answers" id="option-4" checked>
+    <label class="answer-option" for="option-4">
+      <span data-hover="Answer 4">Answer 4</span>
+    </label>
     `;
 
   runningQuestion++;

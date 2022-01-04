@@ -65,20 +65,20 @@ function showQuestion() {
   a.innerHTML = `  
     <input class="answer-option" type="radio" name="answers" id="option-1" checked>
     <label class="answer-option" for="option-1">
-      <span data-hover="Answer 1">Answer 1</span>
+      <span data-hover="${q.optionA}">${q.optionA}</span>
     </label><!-- -->
     <input class="answer-option" type="radio" name="answers" id="option-2">
     <label class="answer-option" for="option-2">							
-      <span data-hover="Answer 2">Answer 2</span>
+      <span data-hover="${q.optionB}">${q.optionB}</span>
     </label><!--
                 -->
     <input class="answer-option" type="radio" name="answers" id="option-3" checked>
     <label class="answer-option" for="option-3">
-      <span data-hover="Answer 3">Answer 3</span>
+      <span data-hover="${q.optionC}">${q.optionC}</span>
     </label>
     <input class="answer-option" type="radio" name="answers" id="option-4" checked>
     <label class="answer-option" for="option-4">
-      <span data-hover="Answer 4">Answer 4</span>
+      <span data-hover="${q.optionD}">${q.optionD}</span>
     </label>
     `;
 

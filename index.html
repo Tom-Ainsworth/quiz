@@ -21,7 +21,7 @@
 
   <div id="border-outer">
     <div class="border-inner">
-      <div class="text-container">
+      <div id="home-page">
         <h1>Harry Potter Sorting Hat Quiz</h1>
         <h2>Which house are you in?</h2>
 
@@ -35,11 +35,26 @@
           Or are you a cunning and ambitious <span>Slytherin?</span>
         </p>
 
-        <!-- Link to start quiz -->
-        <a id="btn-start-quiz" class="quiz-btn" href="quiz/index.html">Start Quiz</a>
+        <!-- Button to start quiz -->
+        <button onclick="showQuestion()" id="btn-start-quiz" class="quiz-btn">Start Quiz</button>
       </div>
+
+      <section id="quiz-page" class="hidden">
+            <!-- Empty h1 to be populated by question title from Javascript -->
+            <h1 id="current-question"></h1>
+            <form >
+              <fieldset id="answer-options">
+              <!-- Empty list to be populated by question options in Javascript -->
+            </fieldset>
+            </form>
+            <div id="menu-btn-div">
+              <a id="menu-btn" class="quiz-btn" href="../index.html">Menu</a>
+            </div>
+      </section>
     </div>
   </div>
+
+  <script src="../assets/js/script.js"></script>
 
 </body>
 

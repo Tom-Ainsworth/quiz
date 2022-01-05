@@ -58,12 +58,13 @@ let slytherinScore = 0;
 function showQuestion() {
   let q = questions[runningQuestion];
   let a = document.getElementById('answer-options');
-
+  document.getElementById('home-page').classList.add('hidden');
+  document.getElementById('quiz-page').classList.remove('hidden');
   currentQuestion.innerHTML = q.title;
 
   // Inject template HTML into the DOM
   a.innerHTML = `  
-    <input class="answer-option" type="radio" name="answers" id="option-1" checked>
+    <input class="answer-option" type="radio" name="answers" id="option-1" required>
     <label class="answer-option" for="option-1">
       <span data-hover="${q.optionA}">${q.optionA}</span>
     </label><!-- -->
@@ -72,14 +73,16 @@ function showQuestion() {
       <span data-hover="${q.optionB}">${q.optionB}</span>
     </label><!--
                 -->
-    <input class="answer-option" type="radio" name="answers" id="option-3" checked>
+    <input class="answer-option" type="radio" name="answers" id="option-3">
     <label class="answer-option" for="option-3">
       <span data-hover="${q.optionC}">${q.optionC}</span>
     </label>
-    <input class="answer-option" type="radio" name="answers" id="option-4" checked>
+    <input class="answer-option" type="radio" name="answers" id="option-4">
     <label class="answer-option" for="option-4">
       <span data-hover="${q.optionD}">${q.optionD}</span>
     </label>
+    <br>
+    <button onclick="nextQuestion()" id="btn-submit" class="quiz-btn">Submit</button>
     `;
 
   runningQuestion++;
@@ -106,7 +109,6 @@ function showResults() {
 
 }
 
-window.onload = () => {
-  console.log("The window has loaded!");
-  showQuestion();
-};
+window.addEventListener('DOMContentLoaded', (event) => {
+  console.log('DOM fully loaded and parsed');
+});

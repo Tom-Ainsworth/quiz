@@ -88,7 +88,7 @@ function initiateQuiz() {
       <span data-hover="${q.optionD}">${q.optionD}</span>
     </label>
     <br>
-    <button onclick='checkAnswer()' id="btn-submit" class="quiz-btn">Submit</button>
+    <button id="btn-submit" class="quiz-btn">Submit</button>
     `;
   console.log("Gryffindor Score: " + gryffindorScore);
   console.log("Hufflepuff Score: " + hufflepuffScore);

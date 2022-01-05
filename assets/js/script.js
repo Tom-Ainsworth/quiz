@@ -109,6 +109,16 @@ function showResults() {
 
 }
 
+function startAgain() {
+  gryffindorScore = 0;
+  hufflepuffScore = 0;
+  ravenclawScore = 0;
+  slytherinScore = 0;
+
+  document.getElementById('quiz-page').classList.add('hidden');
+  document.getElementById('home-page').classList.remove('hidden');
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });

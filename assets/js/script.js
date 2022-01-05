@@ -53,6 +53,7 @@ const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 const q = questions[runningQuestion];
 const a = document.getElementById('answer-options');
+const submit = document.getElementById('btn-submit');
 
 let gryffindorScore = 0;
 let hufflepuffScore = 0;
@@ -90,12 +91,13 @@ function initiateQuiz() {
       <span data-hover="${q.optionD}">${q.optionD}</span>
     </label>
     <br>
-    <button onclick="checkAnswer()" id="btn-submit" class="quiz-btn">Submit</button>
+    <button onclick='checkAnswer()' id="btn-submit" class="quiz-btn">Submit</button>
     `;
   console.log("Gryffindor Score: " + gryffindorScore);
   console.log("Hufflepuff Score: " + hufflepuffScore);
   console.log("Ravenclaw Score " + ravenclawScore);
   console.log("Slytherin Score " + slytherinScore);
+  console.log('Running Question is: ' + runningQuestion);
 };
 
 /**
@@ -111,18 +113,46 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
-  if (optionA.checked) {
+  document.getElementById("btn-submit").addEventListener("click", function (event) {
+    event.preventDefault()
+  });
+  document.getElementById("option-1").addEventListener("click", function (event) {
+    event.preventDefault()
+  });
+  document.getElementById("option-2").addEventListener("click", function (event) {
+    event.preventDefault()
+  });
+  document.getElementById("option-3").addEventListener("click", function (event) {
+    event.preventDefault()
+  });
+  document.getElementById("option-4").addEventListener("click", function (event) {
+    event.preventDefault()
+  });
+
+  if (document.getElementById('option-1').checked) {
     gryffindorScore++;
-    console.log(allScores);
-  } else if (optionB.checked) {
+    console.log('Gryffindor Score: ' + gryffindorScore);
+    runningQuestion++
+    console.log('Running Question: ' + runningQuestion);
+    initiateQuiz();
+  } else if (document.getElementById('option-2').checked) {
     hufflepuffScore++;
-    console.log(allScores);
-  } else if (optionC.checked) {
+    console.log('Hufflepuff Score: ' + hufflepuffScore);
+    runningQuestion++
+    console.log('Running Question: ' + runningQuestion);
+    initiateQuiz();
+  } else if (document.getElementById('option-3').checked) {
     ravenclawScore++;
-    console.log(allScores);
-  } else if (optionD.checked) {
+    console.log('Ravenclaw Score: ' + ravenclawScore++);
+    runningQuestion++
+    console.log('Running Question: ' + runningQuestion);
+    initiateQuiz();
+  } else if (document.getElementById('option-4').checked) {
     slytherinScore++;
-    console.log(allScores);
+    console.log('Slytherin Score: ' + slytherinScore++);
+    runningQuestion++
+    console.log('Running Question: ' + runningQuestion);
+    initiateQuiz();
   }
 }
 

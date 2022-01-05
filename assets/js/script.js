@@ -45,8 +45,6 @@ const questions = [{
 // Global variables for html elements
 const currentQuestion = document.getElementById('current-question');
 const answers = document.getElementById('answer-options');
-const sumbitAnswer = document.getElementById('btn-confirm-choice');
-const previousQuestion = document.getElementById('previous-queston');
 const lastQuestion = questions.length - 1;
 
 // Question & Score counters
@@ -54,7 +52,6 @@ let runningQuestion = 0;
 const q = questions[runningQuestion];
 const a = document.getElementById('answer-options');
 const submit = document.getElementById('btn-submit');
-
 let gryffindorScore = 0;
 let hufflepuffScore = 0;
 let ravenclawScore = 0;
@@ -97,7 +94,6 @@ function initiateQuiz() {
   console.log("Hufflepuff Score: " + hufflepuffScore);
   console.log("Ravenclaw Score " + ravenclawScore);
   console.log("Slytherin Score " + slytherinScore);
-  console.log('Running Question is: ' + runningQuestion);
 };
 
 /**
@@ -132,28 +128,23 @@ function checkAnswer() {
   if (document.getElementById('option-1').checked) {
     gryffindorScore++;
     console.log('Gryffindor Score: ' + gryffindorScore);
-    runningQuestion++
-    console.log('Running Question: ' + runningQuestion);
     initiateQuiz();
   } else if (document.getElementById('option-2').checked) {
     hufflepuffScore++;
     console.log('Hufflepuff Score: ' + hufflepuffScore);
-    runningQuestion++
-    console.log('Running Question: ' + runningQuestion);
     initiateQuiz();
   } else if (document.getElementById('option-3').checked) {
     ravenclawScore++;
-    console.log('Ravenclaw Score: ' + ravenclawScore++);
-    runningQuestion++
-    console.log('Running Question: ' + runningQuestion);
+    console.log('Ravenclaw Score: ' + ravenclawScore);
     initiateQuiz();
   } else if (document.getElementById('option-4').checked) {
     slytherinScore++;
-    console.log('Slytherin Score: ' + slytherinScore++);
-    runningQuestion++
-    console.log('Running Question: ' + runningQuestion);
+    console.log('Slytherin Score: ' + slytherinScore);
     initiateQuiz();
   }
+  runningQuestion++
+  console.log('Running Question is: ' + runningQuestion);
+  console.log(q);
 }
 
 function showResults() {
@@ -165,6 +156,7 @@ function startAgain() {
   hufflepuffScore = 0;
   ravenclawScore = 0;
   slytherinScore = 0;
+  runningQuestion = 0
 
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('home-page').classList.remove('hidden');

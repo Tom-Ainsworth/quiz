@@ -9,7 +9,6 @@ const questions = [{
     optionB: "b",
     optionC: "c",
     optionD: "d",
-    correctAnswer: "a"
   },
   {
     title: "Question 2",
@@ -17,28 +16,24 @@ const questions = [{
     optionB: "f",
     optionC: "g",
     optionD: "h",
-    correctAnswer: "e"
   }, {
     title: "Question 3",
     optionA: "i",
     optionB: "j",
     optionC: "k",
     optionD: "l",
-    correctAnswer: "i"
   }, {
     title: "Question 4",
     optionA: "m",
     optionB: "n",
     optionC: "o",
     optionD: "p",
-    correctAnswer: "m"
   }, {
     title: "Question 5",
-    optionA: "a",
-    optionB: "b",
-    optionC: "c",
-    optionD: "d",
-    correctAnswer: "r"
+    optionA: "q",
+    optionB: "r",
+    optionC: "s",
+    optionD: "t",
   },
 ];
 
@@ -126,7 +121,7 @@ function checkAnswer() {
   });
 
   runningQuestion++
-  
+
   if (document.getElementById('option-1').checked) {
     gryffindorScore++;
     console.log('Gryffindor Score: ' + gryffindorScore);

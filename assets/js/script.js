@@ -83,8 +83,15 @@ function initiateQuiz() {
       <span data-hover="${q.optionD}">${q.optionD}</span>
     </label>
     <br>
-    <button onclick='checkAnswer()' id="btn-submit" class="quiz-btn">Submit</button>
+    <button type="submit" id="btn-submit" class="quiz-btn">Submit</button>
     `;
+
+    let submitBtn = document.getElementById('btn-submit');
+  submitBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    checkAnswer();
+  });
+
   console.log("Gryffindor Score: " + gryffindorScore);
   console.log("Hufflepuff Score: " + hufflepuffScore);
   console.log("Ravenclaw Score " + ravenclawScore);
@@ -94,32 +101,18 @@ function initiateQuiz() {
 /**
  * On clicking the submit button, this will check which answer was entered, and load the next question
  */
-function nextQuestion() {
-  if (runningQuestion = questions.length) {
-    showResults();
-  } else if (runningQuestion < questions.length) {
-    runningQuestion++
-    initiateQuiz();
-  }
-}
+
+// DELETE THIS BEFORE SUBMISSION
+// function nextQuestion() { 
+//   if (runningQuestion = questions.length) {
+//     showResults();
+//   } else if (runningQuestion < questions.length) {
+//     runningQuestion++
+//     initiateQuiz();
+//   }
+// }
 
 function checkAnswer() {
-  document.getElementById("btn-submit").addEventListener("click", function (event) {
-    event.preventDefault()
-  });
-  document.getElementById("option-1").addEventListener("click", function (event) {
-    event.preventDefault()
-  });
-  document.getElementById("option-2").addEventListener("click", function (event) {
-    event.preventDefault()
-  });
-  document.getElementById("option-3").addEventListener("click", function (event) {
-    event.preventDefault()
-  });
-  document.getElementById("option-4").addEventListener("click", function (event) {
-    event.preventDefault()
-  });
-
   runningQuestion++
 
   if (document.getElementById('option-1').checked) {
@@ -148,6 +141,7 @@ function showResults() {
 }
 
 function startAgain() {
+  
   gryffindorScore = 0;
   hufflepuffScore = 0;
   ravenclawScore = 0;
@@ -157,3 +151,5 @@ function startAgain() {
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('home-page').classList.remove('hidden');
 }
+
+document.getElementById('menu-btn').addEventListener('click', startAgain);

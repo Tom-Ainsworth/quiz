@@ -55,7 +55,7 @@ let slytherinScore = 0;
 /**
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
-function showQuestion() {
+function initiateQuiz() {
   let q = questions[runningQuestion];
   let a = document.getElementById('answer-options');
   document.getElementById('home-page').classList.add('hidden');
@@ -84,20 +84,19 @@ function showQuestion() {
     <br>
     <button onclick="nextQuestion()" id="btn-submit" class="quiz-btn">Submit</button>
     `;
-
-  runningQuestion++;
 };
 
 /**
  * On clicking the submit button, this will check which answer was entered, and load the next question
  */
 function nextQuestion() {
+  runningQuestion++;
   checkAnswer();
 
   if (runningQuestion = questions.length) {
     showResults();
   } else if (runningQuestion < questions.length) {
-    showQuestion()
+    initiateQuiz();
   }
 }
 

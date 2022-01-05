@@ -1,4 +1,8 @@
 // Array of quiz questions
+window.addEventListener('DOMContentLoaded', (event) => {
+  console.log('DOM fully loaded and parsed');
+});
+
 const questions = [{
     title: "Question 1",
     optionA: "a",
@@ -47,17 +51,19 @@ const lastQuestion = questions.length - 1;
 
 // Question & Score counters
 let runningQuestion = 0;
+const q = questions[runningQuestion];
+const a = document.getElementById('answer-options');
 
 let gryffindorScore = 0;
 let hufflepuffScore = 0;
 let ravenclawScore = 0;
 let slytherinScore = 0;
+let allScores = `${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${slytherinScore}`;
+
 /**
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function initiateQuiz() {
-  let q = questions[runningQuestion];
-  let a = document.getElementById('answer-options');
   document.getElementById('home-page').classList.add('hidden');
   document.getElementById('quiz-page').classList.remove('hidden');
   currentQuestion.innerHTML = q.title;
@@ -67,41 +73,57 @@ function initiateQuiz() {
     <input class="answer-option" type="radio" name="answers" id="option-1" required>
     <label class="answer-option" for="option-1">
       <span data-hover="${q.optionA}">${q.optionA}</span>
-    </label><!-- -->
+    </label>
+
     <input class="answer-option" type="radio" name="answers" id="option-2">
     <label class="answer-option" for="option-2">							
       <span data-hover="${q.optionB}">${q.optionB}</span>
-    </label><!--
-                -->
+    </label>
+
     <input class="answer-option" type="radio" name="answers" id="option-3">
     <label class="answer-option" for="option-3">
       <span data-hover="${q.optionC}">${q.optionC}</span>
     </label>
+
     <input class="answer-option" type="radio" name="answers" id="option-4">
     <label class="answer-option" for="option-4">
       <span data-hover="${q.optionD}">${q.optionD}</span>
     </label>
     <br>
-    <button onclick="nextQuestion()" id="btn-submit" class="quiz-btn">Submit</button>
+    <button onclick="checkAnswer()" id="btn-submit" class="quiz-btn">Submit</button>
     `;
+  console.log("Gryffindor Score: " + gryffindorScore);
+  console.log("Hufflepuff Score: " + hufflepuffScore);
+  console.log("Ravenclaw Score " + ravenclawScore);
+  console.log("Slytherin Score " + slytherinScore);
 };
 
 /**
  * On clicking the submit button, this will check which answer was entered, and load the next question
  */
 function nextQuestion() {
-  runningQuestion++;
-  checkAnswer();
-
   if (runningQuestion = questions.length) {
     showResults();
   } else if (runningQuestion < questions.length) {
+    runningQuestion++
     initiateQuiz();
   }
 }
 
 function checkAnswer() {
-
+  if (optionA.checked) {
+    gryffindorScore++;
+    console.log(allScores);
+  } else if (optionB.checked) {
+    hufflepuffScore++;
+    console.log(allScores);
+  } else if (optionC.checked) {
+    ravenclawScore++;
+    console.log(allScores);
+  } else if (optionD.checked) {
+    slytherinScore++;
+    console.log(allScores);
+  }
 }
 
 function showResults() {
@@ -117,7 +139,3 @@ function startAgain() {
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('home-page').classList.remove('hidden');
 }
-
-window.addEventListener('DOMContentLoaded', (event) => {
-  console.log('DOM fully loaded and parsed');
-});

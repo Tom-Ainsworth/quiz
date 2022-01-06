@@ -56,6 +56,7 @@ let allScores = `${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${sl
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function initiateQuiz() {
+  
   const q = questions[runningQuestion];
   document.getElementById('home-page').classList.add('hidden');
   document.getElementById('quiz-page').classList.remove('hidden');
@@ -91,7 +92,6 @@ function initiateQuiz() {
     event.preventDefault();
     checkAnswer();
   });
-
   console.log("Gryffindor Score: " + gryffindorScore);
   console.log("Hufflepuff Score: " + hufflepuffScore);
   console.log("Ravenclaw Score " + ravenclawScore);
@@ -113,27 +113,25 @@ function initiateQuiz() {
 // }
 
 function checkAnswer() {
-  runningQuestion++
-
   if (document.getElementById('option-1').checked) {
     gryffindorScore++;
-    console.log('Gryffindor Score: ' + gryffindorScore);
-    initiateQuiz();
+    runningQuestion++;
   } else if (document.getElementById('option-2').checked) {
     hufflepuffScore++;
+    runningQuestion++;
     console.log('Hufflepuff Score: ' + hufflepuffScore);
-    initiateQuiz();
   } else if (document.getElementById('option-3').checked) {
     ravenclawScore++;
+    runningQuestion++;
     console.log('Ravenclaw Score: ' + ravenclawScore);
-    initiateQuiz();
   } else if (document.getElementById('option-4').checked) {
     slytherinScore++;
+    runningQuestion++;
     console.log('Slytherin Score: ' + slytherinScore);
-    initiateQuiz();
   }
   
   console.log('Running Question is: ' + runningQuestion);
+  initiateQuiz();
 }
 
 function showResults() {

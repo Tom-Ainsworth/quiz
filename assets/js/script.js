@@ -2,6 +2,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
+document.getElementById('btn-start-quiz').addEventListener('click', showNextQuestion);
 
 const questions = [{
     title: "Question 1",

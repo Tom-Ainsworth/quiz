@@ -57,7 +57,6 @@ let allScores = `${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${sl
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
 function showNextQuestion() {
-  
   const q = questions[runningQuestion];
   document.getElementById('home-page').classList.add('hidden');
   document.getElementById('quiz-page').classList.remove('hidden');
@@ -88,16 +87,25 @@ function showNextQuestion() {
     <button type="submit" id="btn-submit" class="quiz-btn">Submit</button>
     `;
 
-    let submitBtn = document.getElementById('btn-submit');
-  submitBtn.addEventListener('click', function(event) {
+  let submitBtn = document.getElementById('btn-submit');
+  submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
-    checkAnswerThenNextQuestion();
+    submitAnswer();
   });
   console.log("Gryffindor Score: " + gryffindorScore);
   console.log("Hufflepuff Score: " + hufflepuffScore);
   console.log("Ravenclaw Score " + ravenclawScore);
   console.log("Slytherin Score " + slytherinScore);
 };
+
+function submitAnswer() {
+  if (runningQuestion == lastQuestion) {
+    collectResults();
+  } else {
+    checkAnswerResult();
+    showNextQuestion();
+  }
+}
 
 /**
  * On clicking the submit button, this will check which answer was entered, and load the next question
@@ -106,14 +114,14 @@ function showNextQuestion() {
 // DELETE THIS BEFORE SUBMISSION
 // function nextQuestion() { 
 //   if (runningQuestion = questions.length) {
-//     showResults();
+//     collectResults();
 //   } else if (runningQuestion < questions.length) {
 //     runningQuestion++
 //     initiateQuiz();
 //   }
 // }
 
-function checkAnswerThenNextQuestion() {
+function checkAnswerResult() {
   if (document.getElementById('option-1').checked) {
     gryffindorScore++;
     runningQuestion++;
@@ -130,17 +138,20 @@ function checkAnswerThenNextQuestion() {
     runningQuestion++;
     console.log('Slytherin Score: ' + slytherinScore);
   }
-  
   console.log('Running Question is: ' + runningQuestion);
-  showNextQuestion();
 }
 
-function showResults() {
-
+function collectResults() {
+  let finalScores = [];
+  finalScores.push(`${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${slytherinScore}`);
+  console.log(allScores);
+  alert("You've Won!");
 }
 
+/**
+ * 
+ */
 function startAgainFromMenu() {
-  
   gryffindorScore = 0;
   hufflepuffScore = 0;
   ravenclawScore = 0;

@@ -41,7 +41,7 @@ const questions = [{
 // Global variables for html elements
 const currentQuestion = document.getElementById('current-question');
 const answers = document.getElementById('answer-options');
-const lastQuestion = questions.length - 1;
+
 
 // Question & Score counters
 let runningQuestion = 0;
@@ -99,6 +99,7 @@ function showNextQuestion() {
 };
 
 function submitAnswer() {
+  const lastQuestion = questions.length - 1;
   if (runningQuestion == lastQuestion) {
     collectResults();
   } else {
@@ -149,7 +150,7 @@ function collectResults() {
 }
 
 /**
- * 
+ * Resets all scores and returns to the main screen
  */
 function startAgainFromMenu() {
   gryffindorScore = 0;

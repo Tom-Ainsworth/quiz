@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&display=swap');
 
 /* General element styles */
-body{
-	background: black;
-	overflow-x: hidden;
+body {
+  background: black;
+  overflow-x: hidden;
   font-family: 'EB Garamond', serif;
-	font-size: 16px;
+  font-size: 16px;
   color: white;
   text-align: center;
   border: 0;
@@ -18,22 +18,19 @@ h1 {
   width: 80%;
   max-width: 416.5px;
   border-top: 2px solid #f5f5f5;
+  font-family: 'EB Garamond', serif;
+  margin: 20px auto 10px;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid #f5f5f5;
+  border-radius: 10%;
 }
 
 h2 {
   font-size: 24px;
   width: 60%;
+  margin: 0px auto 10px;
   max-width: 269.4px;
-}
-
-h1, h2 {
-  font-family: 'EB Garamond', serif;
-  margin: 20px auto;
-  text-align: center;
-  padding: 10px 0px;
-  border-bottom: 2px solid #f5f5f5;
-  border-radius: 10%;
-  
 }
 
 p {
@@ -54,6 +51,7 @@ a {
 fieldset {
   border: none;
 }
+
 /* End of General element styles */
 
 /* Border Styling */
@@ -67,7 +65,7 @@ fieldset {
 }
 
 .border-inner {
-  border: 2px solid #ffd700; 
+  border: 2px solid #ffd700;
   box-sizing: border-box;
   border-radius: 5px;
   width: 100%;
@@ -76,7 +74,8 @@ fieldset {
   padding: 5px;
 }
 
-#home-page, #quiz-page {
+#home-page,
+#quiz-page {
   border: 2px solid #DC9104;
   box-sizing: border-box;
   border-radius: 10px;
@@ -85,6 +84,7 @@ fieldset {
   position: relative;
   padding: 5px;
 }
+
 /* End of Border Styling */
 
 .hidden {
@@ -118,107 +118,114 @@ fieldset {
   border-radius: 10px;
   position: relative;
   -webkit-transition: all 300ms linear;
-	transition: all 300ms linear;
+  transition: all 300ms linear;
 }
 
-.quiz-btn:hover, #btn-start-quiz:hover {
+.quiz-btn:hover,
+#btn-start-quiz:hover {
   color: #000000;
   background-color: #ffd700;
 }
 
 #menu-btn-div {
-  margin: 10px;
-  padding: 8px 10px;
+  margin: 0 auto;
+  padding: 0px 10px 10px;
 }
-/* End of Button/Link Styling */
+
+/* // End of Button/Link Styling */
 
 /* Quiz Answer Styling */
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
-	position: absolute;
-	left: -9999px;
-	width: 0;
-	height: 0;
-	visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
-.answer-option:checked + label,
-.answer-option:not(:checked) + label {
-	position: relative;
-	display: inline-block;
-	padding: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 60%;
-	font-size: 20px;
-	line-height: 20px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-	text-align: center;
+.answer-option:checked+label,
+.answer-option:not(:checked)+label {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
   border: 3px solid gold;
-	border-radius: .25em;
-	overflow: hidden;
-	cursor: pointer;
-	text-transform: uppercase;
-	-webkit-transition: all 300ms linear;
-	transition: all 300ms linear; 
-    
+  border-radius: .25em;
+  overflow: hidden;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+
 }
 
-.answer-option:not(:checked) + label {
-	background-color: black;
+.answer-option:not(:checked)+label {
+  background-color: black;
 }
 
-.answer-option:not(:checked):hover + label:hover {
-	color: black;
+.answer-option:not(:checked):hover+label:hover {
+  color: black;
   background-color: gold;
 }
 
-.answer-option:checked + label::before,
-.answer-option:not(:checked) + label::before, .quiz-btn::before {
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border:none;
-	background-color: gold;
-	z-index: -1;
-  	-webkit-transition: all 300ms linear;
-	transition: all 300ms linear;
+.answer-option:checked+label::before,
+.answer-option:not(:checked)+label::before,
+.quiz-btn::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: gold;
+  z-index: -1;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
 }
 
-.answer-option:checked + label span,
-.answer-option:not(:checked) + label span {
-	position: relative;
-	display: block;
+.answer-option:checked+label span,
+.answer-option:not(:checked)+label span {
+  position: relative;
+  display: block;
 }
 
-.answer-option:checked + label span::before,
-.answer-option:not(:checked) + label span::before, .quiz-btn::before {
-	position: absolute;
-	content: attr(data-hover);
-	top: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
+.answer-option:checked+label span::before,
+.answer-option:not(:checked)+label span::before,
+.quiz-btn::before {
+  position: absolute;
+  content: attr(data-hover);
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
   color: black;
-	-webkit-transition: max-height 0.3s;
-	-moz-transition: max-height 0.3s;
-	transition: max-height 0.3s;
-  
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+
 }
 
-.answer-option:not(:checked) + label span::before, .quiz-btn::before {
-	max-height: 0;
+.answer-option:not(:checked)+label span::before,
+.quiz-btn::before {
+  max-height: 0;
 }
 
-.answer-option:checked + label span::before, .quiz-btn::before {
-	max-height: 100%;
+.answer-option:checked+label span::before,
+.quiz-btn::before {
+  max-height: 100%;
 }
+
 /* End of Quiz Answer Styling */

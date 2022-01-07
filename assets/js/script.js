@@ -55,7 +55,7 @@ let allScores = `${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${sl
 /**
  * When the page first loads, this will populate the quiz area with question 1 and the relevant options
  */
-function initiateQuiz() {
+function showNextQuestion() {
   
   const q = questions[runningQuestion];
   document.getElementById('home-page').classList.add('hidden');
@@ -90,7 +90,7 @@ function initiateQuiz() {
     let submitBtn = document.getElementById('btn-submit');
   submitBtn.addEventListener('click', function(event) {
     event.preventDefault();
-    checkAnswer();
+    checkAnswerThenNextQuestion();
   });
   console.log("Gryffindor Score: " + gryffindorScore);
   console.log("Hufflepuff Score: " + hufflepuffScore);
@@ -112,7 +112,7 @@ function initiateQuiz() {
 //   }
 // }
 
-function checkAnswer() {
+function checkAnswerThenNextQuestion() {
   if (document.getElementById('option-1').checked) {
     gryffindorScore++;
     runningQuestion++;
@@ -131,14 +131,14 @@ function checkAnswer() {
   }
   
   console.log('Running Question is: ' + runningQuestion);
-  initiateQuiz();
+  showNextQuestion();
 }
 
 function showResults() {
 
 }
 
-function startAgain() {
+function startAgainFromMenu() {
   
   gryffindorScore = 0;
   hufflepuffScore = 0;
@@ -150,4 +150,4 @@ function startAgain() {
   document.getElementById('home-page').classList.remove('hidden');
 }
 
-document.getElementById('menu-btn').addEventListener('click', startAgain);
+document.getElementById('menu-btn').addEventListener('click', startAgainFromMenu);

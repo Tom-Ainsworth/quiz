@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harry Potter Sorting Quiz</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
 
+  <title>Harry Potter Sorting Quiz</title>
   <meta name="description"
     content="Find out which house you belong to in this quick and easy Harry Potter Sorting Hat Quiz">
   <meta name="keywords"
@@ -18,47 +22,49 @@
 </head>
 
 <body>
-<main>
-  <div id="border-outer">
-    <div class="border-inner">
-      <div id="home-page">
-        <h1>Harry Potter Sorting Hat Quiz</h1>
-        <h2>Which house are you in?</h2>
+  <main>
+    <div id="border-outer">
+      <div class="border-inner">
+        <div id="home-page">
+          <h1>Harry Potter Sorting Hat Quiz</h1>
+          <h2>Which house are you in?</h2>
 
-        <p>
-          Will you be a courageous, determined <span>Gryffindor?</span>
-        </p>
-        <p>
-          Perhaps a wise and witty <span>Ravenclaw?</span>
-        </p>
-        <p>
-          Will you join the loyal, kind <span>Hufflepuff</span> house?
-        </p>
-        <p>
-          Or are you a cunning and ambitious <span>Slytherin?</span>
-        </p>
+          <p>
+            Will you be a courageous, determined <span>Gryffindor?</span>
+          </p>
+          <p>
+            Perhaps a wise and witty <span>Ravenclaw?</span>
+          </p>
+          <p>
+            Will you join the loyal, kind <span>Hufflepuff</span> house?
+          </p>
+          <p>
+            Or are you a cunning and ambitious <span>Slytherin?</span>
+          </p>
 
-        <!-- Button to start quiz -->
-        <button id="btn-start-quiz" class="quiz-btn">Start Quiz</button>
-      </div>
-
-      <section id="quiz-page" class="hidden">
-        <!-- Empty h1 to be populated by question title from Javascript -->
-        <h1 id="current-question"></h1>
-        <form>
-          <fieldset id="answer-options">
-            <!-- Empty list to be populated by question options in Javascript -->
-          </fieldset>
-        </form>
-        <div id="menu-btn-div">
-          <button id="menu-btn" class="quiz-btn">Start Again</button>
+          <!-- Button to start quiz -->
+          <button id="btn-start-quiz" class="quiz-btn">Start Quiz</button>
         </div>
-      </section>
+
+        <section id="quiz-page" class="hidden">
+          <!-- Empty h1 to be populated by question title from Javascript -->
+          <h1 id="current-question"></h1>
+          <form>
+            <fieldset id="answer-options">
+              <!-- Empty list to be populated by question options in Javascript -->
+            </fieldset>
+          </form>
+          <div id="menu-btn-div">
+            <button id="menu-btn" class="quiz-btn">Start Again</button>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
 
-</main>
-
+  </main>
+  <footer>
+    <a href=""></a>
+  </footer>
   <script src="assets/js/script.js"></script>
 
 </body>

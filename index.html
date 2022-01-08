@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
   <link rel="manifest" href="assets/images/site.webmanifest">
+  <script src="https://kit.fontawesome.com/27b1d1ea74.js" crossorigin="anonymous"></script>
 
   <title>Harry Potter Sorting Quiz</title>
   <meta name="description"
@@ -22,48 +23,55 @@
 </head>
 
 <body>
-  <main>
-    <div id="border-outer">
-      <div class="border-inner">
-        <div id="home-page">
-          <h1>Harry Potter Sorting Hat Quiz</h1>
-          <h2>Which house are you in?</h2>
+  <div id="border-outer">
+    <div class="border-inner">
+      <section id="home-page">
+        <h1>Harry Potter Sorting Hat Quiz</h1>
+        <h2>Which house are you in?</h2>
 
-          <p>
-            Will you be a courageous, determined <em>Gryffindor?</em>
-          </p>
-          <p>
-            Perhaps a wise and witty <em>Ravenclaw?</em>
-          </p>
-          <p>
-            Will you join the loyal, kind <em>Hufflepuff</em> house?
-          </p>
-          <p>
-            Or are you a cunning and ambitious <em>Slytherin?</em>
-          </p>
+        <p>
+          Will you be a courageous, determined <em>Gryffindor?</em>
+        </p>
+        <p>
+          Perhaps a wise and witty <em>Ravenclaw?</em>
+        </p>
+        <p>
+          Will you join the loyal, kind <em>Hufflepuff</em> house?
+        </p>
+        <p>
+          Or are you a cunning and ambitious <em>Slytherin?</em>
+        </p>
 
-          <!-- Button to start quiz -->
-          <button id="start-quiz-btn" class="quiz-btn">Start Quiz</button>
+        <!-- Button to start quiz -->
+        <button id="start-quiz-btn" class="quiz-btn">Start Quiz</button>
+      </section>
+
+      <section id="quiz-page" class="hidden">
+        <h2 id="current-question"></h2>
+        <form>
+          <fieldset id="answer-options">
+            <!-- Empty list to be populated by question options in Javascript -->
+          </fieldset>
+        </form>
+        <div id="start-again-btn-div">
+          <button id="start-again-btn" class="quiz-btn">Start Again</button>
         </div>
-
-        <section id="quiz-page" class="hidden">
-          <h2 id="current-question"></h2>
-          <form>
-            <fieldset id="answer-options">
-              <!-- Empty list to be populated by question options in Javascript -->
-            </fieldset>
-          </form>
-          <div id="start-again-btn-div">
-            <button id="start-again-btn" class="quiz-btn">Start Again</button>
-          </div>
-        </section>
-      </div>
+      </section>
+      <footer>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/tomainsworth94/" rel="noopener" target="_blank"
+              aria-label="Visit the author's LinkedIn page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Tom-Ainsworth" rel="noopener" target="_blank"
+              aria-label="Visit the author's Github page (opens in a new tab)"><i class="fab fa-github-square"></i></a>
+          </li>
+        </ul>
+      </footer>
     </div>
+  </div>
 
-  </main>
-  <footer>
-    <a href=""></a>
-  </footer>
   <script src="assets/js/script.js"></script>
 
 </body>

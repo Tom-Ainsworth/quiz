@@ -58,6 +58,10 @@ fieldset {
   border: none;
 }
 
+footer li {
+  list-style-type: none;
+}
+
 /* End of General element styles */
 
 /* Border Styling */

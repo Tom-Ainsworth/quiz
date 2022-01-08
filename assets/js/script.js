@@ -245,12 +245,14 @@ function checkAnswerResult() {
 
 function collectResults() {
 
-  var finalScores = [];
-  finalScores.push(`${gryffindorScore}, ${ravenclawScore}, ${hufflepuffScore}, ${slytherinScore}`);
-  var highestScore = finalScores.reduce(function(a, b) {
-    return Math.max(a, b);
-}, 0);
-  console.log(highestScore);
+  const finalScores = [{
+    gryffindor: gryffindorScore,
+    ravenclaw: ravenclawScore,
+    hufflepuff: hufflepuffScore,
+    slytherin: slytherinScore
+  }];
+
+  console.log(finalScores);
   alert("You've Won!");
   document.getElementById('btn-submit').classList.add('hidden');
 }

@@ -2,7 +2,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
-document.getElementById('btn-start-quiz').addEventListener('click', showNextQuestion);
+document.getElementById('start-quiz-btn').addEventListener('click', showNextQuestion);
 
 const questions = [{
     title: "Which colour is your favourite?",
@@ -17,19 +17,22 @@ const questions = [{
     optionB: "Owl",
     optionC: "Hamster",
     optionD: "Lizard",
-  }, {
+  },
+  {
     title: "Which personality trait do you most value?",
     optionA: "Courage",
     optionB: "Intelligence",
     optionC: "Kindness",
     optionD: "Ambition",
-  }, {
+  },
+  {
     title: "If you’re running a race and your friend trips over, do you…",
-    optionA: "Heroically sling them over your shoulder and run with them to the finish line",
-    optionB: "Convince the race officials that the race is invalid on a technicality and must be re-run",
-    optionC: "Sit with your friend and comfort them - the race isn’t important. ",
-    optionD: "Keep running - you need to win this!",
-  }, {
+    optionA: "Carry them to the finish line",
+    optionB: "Convince race officials to re-do the race",
+    optionC: "Sit with your friend and comfort them",
+    optionD: "Keep running, you need to win this!",
+  },
+  {
     title: "What sort of car would you drive?",
     optionA: "Range Rover",
     optionB: "Tesla",
@@ -40,7 +43,7 @@ const questions = [{
     title: "You accidentally break your mum’s vase do you…",
     optionA: "wn up to it and take the consequences",
     optionB: "Replace it with an identical vase",
-    optionC: "Apologise to your mum by baking an apology cake",
+    optionC: "Bake her an apology cake",
     optionD: "Find someone else to blame",
   },
   {
@@ -166,6 +169,7 @@ function showNextQuestion() {
   const q = questions[runningQuestion];
   document.getElementById('home-page').classList.add('hidden');
   document.getElementById('quiz-page').classList.remove('hidden');
+  document.getElementById('start-again-btn-div').classList.remove('hidden');
   currentQuestion.innerHTML = q.title;
 
   // Inject template HTML into the DOM
@@ -264,4 +268,4 @@ function startAgainFromMenu() {
   document.getElementById('home-page').classList.remove('hidden');
 }
 
-document.getElementById('menu-btn').addEventListener('click', startAgainFromMenu)
+document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu)

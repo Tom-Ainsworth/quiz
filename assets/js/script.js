@@ -106,14 +106,14 @@ function checkAnswerResult() {
   }
   console.log('Running Question is: ' + runningQuestion);
   if (runningQuestion > lastQuestion) {
-    collectResults();
+    collectResultsAndDisplayHouse();
   }
 }
 
 /**
- * Collects the scores from all 4 houses and puts them into an array to be used to display the final result
+ * Collects the scores from all 4 houses, sorts them from highest to lowest point score, then displays the house result to the user
  */
-function collectResults() {
+function collectResultsAndDisplayHouse() {
   let finalScores = [{
     house: "Gryffindor",
     points: gryffindorScore
@@ -127,14 +127,15 @@ function collectResults() {
     house: "Slytherin",
     points: slytherinScore
   }];
-
   finalScores.sort((a, b) => (b.points - a.points));
+
+  let topScore = finalScores[0];
   document.getElementById('btn-submit').classList.add('hidden');
-  console.log(finalScores);
-  alert("You've Won!");
 
+  if (topScore.house == "Slytherin") {
+    console.log("You're in Slytherin");
+  }
 }
-
 /**
  * Resets all scores and returns to the main screen
  */

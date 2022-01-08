@@ -36,16 +36,13 @@ const answers = document.getElementById('answer-options');
 let runningQuestion = 0;
 const answerOptions = document.getElementById('answer-options');
 const submit = document.getElementById('btn-submit');
-const lastQuestion = questions.length - 1;
+const lastQuestion = questions.length;
 let gryffindorScore = 0;
 let ravenclawScore = 0;
 let hufflepuffScore = 0;
 let slytherinScore = 0;
 let allScores = `${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${slytherinScore}`;
 
-/**
- * When the page first loads, this will populate the quiz area with question 1 and the relevant options
- */
 function showNextQuestion() {
   const questionArray = questions[runningQuestion];
   document.getElementById('home-page').classList.add('hidden');
@@ -105,7 +102,7 @@ function checkAnswerResult() {
     runningQuestion++;
   }
   console.log('Running Question is: ' + runningQuestion);
-  if (runningQuestion > lastQuestion) {
+  if (runningQuestion >= lastQuestion) {
     collectResultsAndDisplayHouse();
   }
 }
@@ -131,13 +128,14 @@ function collectResultsAndDisplayHouse() {
 
   let topScore = finalScores[0];
   document.getElementById('btn-submit').classList.add('hidden');
-
+  document.getElementById('quiz-page').classList.add('hidden');
   if (topScore.house == "Gryffindor") {
     console.log("You're in Gryffindor");
   } else if (topScore.house == "Ravenclaw") {
     console.log("You're in Ravenclaw");
   } else if (topScore.house == "Hufflepuff") {
     console.log("You're in Hufflepuff");
+    document.getElementById('hufflepuff-result').classList.remove('hidden');
   } else if (topScore.house == "Slytherin") {
     console.log("You're in Slytherin");
   } 

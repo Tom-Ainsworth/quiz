@@ -119,10 +119,10 @@ function collectResultsAndDisplayHouse() {
     points: gryffindorScore
   }, {
     house: "Ravenclaw",
-    points: hufflepuffScore
+    points: ravenclawScore
   }, {
     house: "Hufflepuff",
-    points: ravenclawScore
+    points: hufflepuffScore
   }, {
     house: "Slytherin",
     points: slytherinScore
@@ -132,9 +132,15 @@ function collectResultsAndDisplayHouse() {
   let topScore = finalScores[0];
   document.getElementById('btn-submit').classList.add('hidden');
 
-  if (topScore.house == "Slytherin") {
+  if (topScore.house == "Gryffindor") {
+    console.log("You're in Gryffindor");
+  } else if (topScore.house == "Ravenclaw") {
+    console.log("You're in Ravenclaw");
+  } else if (topScore.house == "Hufflepuff") {
+    console.log("You're in Hufflepuff");
+  } else if (topScore.house == "Slytherin") {
     console.log("You're in Slytherin");
-  }
+  } 
 }
 /**
  * Resets all scores and returns to the main screen

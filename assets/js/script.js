@@ -173,7 +173,7 @@ function showNextQuestion() {
       <label class="answer-option" for="option-4">
         <span data-hover="${questionArray.optionD}">${questionArray.optionD}</span>
       </label>
-      `
+      `;
 
     let submitBtn = document.getElementById('btn-submit');
     submitBtn.addEventListener('click', function (event) {
@@ -250,7 +250,7 @@ function startAgainFromMenu() {
   ravenclawScore = 0;
   hufflepuffScore = 0;
   slytherinScore = 0;
-  runningQuestion = 0
+  runningQuestion = 0;
 
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('home-page').classList.remove('hidden');

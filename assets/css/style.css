@@ -38,8 +38,6 @@ h2 {
 #current-question {
   height: 100px;
   border: none;
-  display: flexbox;
-  
 }
 
 p {

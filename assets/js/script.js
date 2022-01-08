@@ -30,6 +30,11 @@ const questions = [{
 // Global variables for html elements
 const currentQuestion = document.getElementById('current-question');
 const answers = document.getElementById('answer-options');
+let submitBtn = document.getElementById('btn-submit');
+submitBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+  submitAnswer();
+});
 
 // Question & Score counters
 let runningQuestion = 0;
@@ -40,7 +45,6 @@ let gryffindorScore = 0;
 let ravenclawScore = 0;
 let hufflepuffScore = 0;
 let slytherinScore = 0;
-let allScores = `${gryffindorScore}, ${hufflepuffScore}, ${ravenclawScore}, ${slytherinScore}`;
 
 function showNextQuestion() {
   if (runningQuestion < lastQuestion) {
@@ -73,16 +77,10 @@ function showNextQuestion() {
         <span data-hover="${questionArray.optionD}">${questionArray.optionD}</span>
       </label>
       `;
-
-    let submitBtn = document.getElementById('btn-submit');
-    submitBtn.addEventListener('click', function (event) {
-      event.preventDefault();
-      submitAnswer();
-    });
   } else {
     collectResultsAndDisplayHouse();
   }
-
+  console.log(gryffindorScore, ravenclawScore, hufflepuffScore, slytherinScore);
 }
 
 function submitAnswer() {
@@ -103,6 +101,8 @@ function checkAnswerResult() {
   } else if (document.getElementById('option-4').checked) {
     slytherinScore++;
     runningQuestion++;
+  } else {
+    alert('Oops! The Sorting Hat needs an answer to decide your fate! Please try again');
   }
 }
 
@@ -110,7 +110,7 @@ function checkAnswerResult() {
  * Collects the scores from all 4 houses, sorts them from highest to lowest point score, then displays the house result to the user
  */
 function collectResultsAndDisplayHouse() {
-  const finalScores = [{
+  let finalScores = [{
     house: "Gryffindor",
     points: gryffindorScore
   }, {
@@ -123,6 +123,12 @@ function collectResultsAndDisplayHouse() {
     house: "Slytherin",
     points: slytherinScore
   }];
+
+  const gryffindor = finalScores[0];
+  const ravenclaw = finalScores[1];
+  const hufflepuff = finalScores[2];
+  const slytherin = finalScores[3];
+
   finalScores.sort((a, b) => (b.points - a.points));
 
   let topScore = finalScores[0];
@@ -130,13 +136,13 @@ function collectResultsAndDisplayHouse() {
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('results-page').classList.remove('hidden');
 
-  if (topScore.house === "Gryffindor") {
+  if (topScore[0].house === "Gryffindor") {
     document.getElementById('gryffindor-result').classList.remove('hidden');
-  } else if (topScore.house === "Ravenclaw") {
+  } else if (topScore[0].house === "Ravenclaw") {
     document.getElementById('ravenclaw-result').classList.remove('hidden');
-  } else if (topScore.house === "Hufflepuff") {
+  } else if (topScore[0].house === "Hufflepuff") {
     document.getElementById('hufflepuff-result').classList.remove('hidden');
-  } else if (topScore.house === "Slytherin") {
+  } else if (topScore[0].house === "Slytherin") {
     document.getElementById('slytherin-result').classList.remove('hidden');
   }
 }

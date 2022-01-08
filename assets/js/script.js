@@ -150,9 +150,9 @@ function showNextQuestion() {
     document.getElementById('home-page').classList.add('hidden');
     document.getElementById('quiz-page').classList.remove('hidden');
     document.getElementById('start-again-btn-div').classList.remove('hidden');
-    currentQuestion.innerHTML = questionArray.title;
-
+    
     // Inject template HTML into the DOM
+    currentQuestion.innerHTML = questionArray.title;
     answerOptions.innerHTML = `  
       <input class="answer-option" type="radio" name="answers" id="option-1" required>
       <label class="answer-option" for="option-1">

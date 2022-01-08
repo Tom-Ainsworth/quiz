@@ -1,9 +1,9 @@
-// Array of quiz questions
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
 document.getElementById('start-quiz-btn').addEventListener('click', showNextQuestion);
 
+// Array of quiz questions
 const questions = [{
     title: "Which colour is your favourite?",
     optionA: "Red",
@@ -248,9 +248,11 @@ function checkAnswerResult() {
 }
 
 function collectResults() {
+
   let finalScores = [];
   finalScores.push(`${gryffindorScore}, ${ravenclawScore}, ${hufflepuffScore}, ${slytherinScore}`);
-  console.log(finalScores);
+  let highestToLowest = numbers.sort((a, b) => b-a);
+  console.log(highestToLowest);
   alert("You've Won!");
 }
 
@@ -268,4 +270,4 @@ function startAgainFromMenu() {
   document.getElementById('home-page').classList.remove('hidden');
 }
 
-document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu)
+document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);

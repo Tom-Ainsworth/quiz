@@ -240,19 +240,36 @@ footer li {
 
 /* Results page styling */
 
-#results-page h2, #results-page h3 {
+#results-page h2,
+#results-page h3 {
   display: block;
   width: 100%;
   letter-spacing: 1px;
   border: none;
 }
+
 .results-image {
   height: 220px;
   width: 256px;
   margin: auto;
 }
 
+#gryffindor-image {
+  background: url(../images/mobile-gryffindor-robe.png) no-repeat center top;
+  overflow: hidden;
+}
+
+#ravenclaw-image {
+  background: url(../images/mobile-ravenclaw-robe.png) no-repeat center top;
+  overflow: hidden;
+}
+
 #hufflepuff-image {
   background: url(../images/mobile-hufflepuff-robe.png) no-repeat center top;
+  overflow: hidden;
+}
+
+#slytherin-image {
+  background: url(../images/mobile-slytherin-robe.png) no-repeat center top;
   overflow: hidden;
 }

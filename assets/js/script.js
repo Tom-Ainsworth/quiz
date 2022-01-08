@@ -110,7 +110,7 @@ function checkAnswerResult() {
  * Collects the scores from all 4 houses, sorts them from highest to lowest point score, then displays the house result to the user
  */
 function collectResultsAndDisplayHouse() {
-  let finalScores = [{
+  const finalScores = [{
     house: "Gryffindor",
     points: gryffindorScore
   }, {
@@ -130,15 +130,14 @@ function collectResultsAndDisplayHouse() {
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('results-page').classList.remove('hidden');
 
-  if (topScore.house == "Gryffindor") {
-    console.log("You're in Gryffindor");
-  } else if (topScore.house == "Ravenclaw") {
-    console.log("You're in Ravenclaw");
-  } else if (topScore.house == "Hufflepuff") {
-    console.log("You're in Hufflepuff");
+  if (topScore.house === "Gryffindor") {
+    document.getElementById('gryffindor-result').classList.remove('hidden');
+  } else if (topScore.house === "Ravenclaw") {
+    document.getElementById('ravenclaw-result').classList.remove('hidden');
+  } else if (topScore.house === "Hufflepuff") {
     document.getElementById('hufflepuff-result').classList.remove('hidden');
-  } else if (topScore.house == "Slytherin") {
-    console.log("You're in Slytherin");
+  } else if (topScore.house === "Slytherin") {
+    document.getElementById('slytherin-result').classList.remove('hidden');
   }
 }
 /**

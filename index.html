@@ -23,7 +23,7 @@
 
 <body>
   <!-- Golden border divs surrounding all content -->
-  <div id="border-outer" class="hidden">
+  <div id="border-outer">
     <div class="border-inner">
 
       <!-- Home page -->
@@ -101,10 +101,11 @@
   </div>
 
   <!-- Instructions Page -->
-  <section id="instructions-page" class="">
+  <section id="instructions-page" class="hidden">
     <div class="border-inner">
       <div id="instructions-content-box">
         <h2>Instructions</h2>
+        <button onclick='startAgainFromMenu()' class="quiz-btn">Main Menu</button>
         <p>
           So you've come to find out which house you'll be in when you get to hogwarts?
           <br>
@@ -141,6 +142,7 @@
             If you think the hat has made a mistake, or you aren't happy with the result, you can return to the Main Menu and try again using different answers. Remember, even Harry Potter was supposed to be a Slytherin before he chose Gryffindor!
           </li>
         </ul>
+        <button onclick='startAgainFromMenu()' class="quiz-btn">Main Menu</button>
       </div>
     </div>
   </section>

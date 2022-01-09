@@ -115,7 +115,6 @@ li {
 }
 
 /* Quiz-Page Styling */
-
 #current-question {
   margin: 10px auto 70px;
   padding-bottom: 5px;
@@ -270,4 +269,28 @@ li {
 #slytherin-image {
   background: url(../images/mobile-slytherin-robe.png) no-repeat center top;
   overflow: hidden;
+}
+
+/* Instructions Page Styling */
+#instructions-page h2 {
+  font-size: 32px;
+}
+#instructions-page p {
+  font-size: 18px;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  border-radius: .25em;
+  width: 100%;
+  max-width: 220px;
+  box-sizing: border-box;
+}
+#instructions-page ul {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px 5px;
+}
+
+#instructions-page li {
+  margin: 5px 0px;
+  text-align: center;
 }

@@ -80,7 +80,6 @@ function showNextQuestion() {
   } else {
     collectResultsAndDisplayHouse();
   }
-  console.log(gryffindorScore, ravenclawScore, hufflepuffScore, slytherinScore);
 }
 
 function submitAnswer() {
@@ -124,40 +123,36 @@ function collectResultsAndDisplayHouse() {
     points: slytherinScore
   }];
 
-  const gryffindor = finalScores[0];
-  const ravenclaw = finalScores[1];
-  const hufflepuff = finalScores[2];
-  const slytherin = finalScores[3];
-
   finalScores.sort((a, b) => (b.points - a.points));
 
-  let topScore = finalScores[0];
+  let topScore = finalScores[0].house;
   document.getElementById('btn-submit').classList.add('hidden');
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('results-page').classList.remove('hidden');
 
-  if (topScore[0].house === "Gryffindor") {
-    document.getElementById('gryffindor-result').classList.remove('hidden');
-  } else if (topScore[0].house === "Ravenclaw") {
-    document.getElementById('ravenclaw-result').classList.remove('hidden');
-  } else if (topScore[0].house === "Hufflepuff") {
-    document.getElementById('hufflepuff-result').classList.remove('hidden');
-  } else if (topScore[0].house === "Slytherin") {
+  if (!(topScore === "Gryffindor") && !(topScore === "Ravenclaw") && !(topScore === "Hufflepuff")) {
     document.getElementById('slytherin-result').classList.remove('hidden');
+  } else if (!(topScore === "Gryffindor") && !(topScore === "Ravenclaw") && !(topScore === "Slytherin")) {
+    document.getElementById('hufflepuff-result').classList.remove('hidden');
+  } else if (!(topScore === "Gryffindor") && !(topScore === "Hufflepuff") && !(topScore === "Slytherin")) {
+    document.getElementById('ravenclaw-result').classList.remove('hidden');
+  } else if (!(topScore === "Ravenclaw") && !(topScore === "Hufflepuff") && !(topScore === "Slytherin")) {
+    document.getElementById('gryffindor-result').classList.remove('hidden');
   }
 }
-/**
- * Resets all scores and returns to the main screen
- */
-function startAgainFromMenu() {
-  gryffindorScore = 0;
-  ravenclawScore = 0;
-  hufflepuffScore = 0;
-  slytherinScore = 0;
-  runningQuestion = 0;
 
-  document.getElementById('quiz-page').classList.add('hidden');
-  document.getElementById('home-page').classList.remove('hidden');
-}
+  /**
+   * Resets all scores and returns to the main screen
+   */
+  function startAgainFromMenu() {
+    gryffindorScore = 0;
+    ravenclawScore = 0;
+    hufflepuffScore = 0;
+    slytherinScore = 0;
+    runningQuestion = 0;
 
-document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);
+    document.getElementById('quiz-page').classList.add('hidden');
+    document.getElementById('home-page').classList.remove('hidden');
+  }
+
+  document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);

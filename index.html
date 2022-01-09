@@ -22,8 +22,11 @@
 </head>
 
 <body>
+  <!-- Golden border divs surrounding all content -->
   <div id="border-outer">
     <div class="border-inner">
+
+      <!-- Home page -->
       <section id="home-page">
         <h1>Harry Potter Sorting Hat Quiz</h1>
         <h2>Which house are you in?</h2>
@@ -46,9 +49,11 @@
         <button id="instructions-btn" class="quiz-btn">Instructions</button>
       </section>
 
+      <!-- Instructions Page -->
       <section id="instructions-page" class="hidden">
       </section>
       
+      <!-- Quiz Page -->
       <section id="quiz-page" class="hidden">
         <h2 id="current-question">Question Title</h2>
         <form id="quiz-answer-options">
@@ -61,25 +66,34 @@
           <button id="start-again-btn" class="quiz-btn">Start Again</button>
         </div>
       </section>
+
+      <!-- Results Page -->
       <section id="results-page" class="hidden">
+        <!-- Gryffindor Result -->
         <div id="gryffindor-result" class="hidden">
           <h2>Congratulations, You have been chosen to join the Gryffindor House!</h2>
           <h3>Think this isn't right? Take the quiz again and try out some different answers</h3>
           <div id="gryffindor-image" class="results-image"></div>
           <button onclick='startAgainFromMenu()' class="quiz-btn">Main Menu</button>
         </div>
+
+        <!-- Ravenclaw Result -->
         <div id="ravenclaw-result" class="hidden">
           <h2>Congratulations, You have been chosen to join the Ravenclaw House!</h2>
           <h3>Think this isn't right? Take the quiz again and try out some different answers</h3>
           <div id="ravenclaw-image" class="results-image"></div>
           <button onclick='startAgainFromMenu()' class="quiz-btn">Main Menu</button>
         </div>
+
+        <!-- Hufflepuff Result -->
         <div id="hufflepuff-result" class="hidden">
           <h2>Congratulations, You have been chosen to join the <em>Hufflepuff House!</em></h2>
           <h3>Think this isn't right? Take the quiz again and try out some different answers</h3>
           <div id="hufflepuff-image" class="results-image"></div>
           <button onclick='startAgainFromMenu()' class="quiz-btn">Main Menu</button>
         </div>
+
+        <!-- Slytherin Result -->
         <div id="slytherin-result" class="hidden">
           <h2>Congratulations, You have been chosen to join the Slytherin House!</h2>
           <h3>Think this isn't right? Take the quiz again and try out some different answers</h3>
@@ -90,6 +104,7 @@
     </div>
   </div>
 
+  <!-- script.js file link -->
   <script src="assets/js/script.js"></script>
 
 </body>

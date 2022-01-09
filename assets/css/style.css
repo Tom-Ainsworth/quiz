@@ -40,11 +40,6 @@ h3 {
 
 }
 
-#current-question {
-  height: 100px;
-  border: none;
-}
-
 p {
   font-size: 16px;
   margin: 0 auto;
@@ -111,7 +106,12 @@ footer li {
   display: none;
 }
 
-/* Button/Link Styling */
+/* Quiz-Page Styling */
+
+#current-question {
+  height: 100px;
+  border: none;
+}
 
 #start-quiz-btn,
 #instructions-btn {
@@ -153,11 +153,7 @@ footer li {
   right: 10%;
 }
 
-/* // End of Button/Link Styling */
-
-
-/* Quiz Answer Styling */
-
+/* Button styling adapted from https://codepen.io/ig_design/pen/dLNKgM Client Budget Section */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
@@ -239,10 +235,9 @@ footer li {
   max-height: 100%;
 }
 
-/* End of Quiz Answer Styling */
+/* End of Button styling adapted from https://codepen.io/ig_design/pen/dLNKgM Client Budget Section */
 
 /* Results page styling */
-
 #results-page h2,
 #results-page h3 {
   display: block;

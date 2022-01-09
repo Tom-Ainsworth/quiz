@@ -60,7 +60,7 @@ function showNextQuestion() {
     document.getElementById('start-again-btn-div').classList.remove('hidden');
     document.getElementById('btn-submit').classList.remove('hidden');
 
-    // Inject template HTML into the DOM
+    // Inject template HTML into fieldset element
     currentQuestion.innerHTML = questionArray.title;
     answerOptions.innerHTML = `  
       <input class="answer-option" type="radio" name="answers" id="option-1" required>
@@ -118,7 +118,7 @@ function checkAnswerResult() {
 }
 
 /**
- * Collect the scores from all 4 houses, sorts them from highest to lowest point score, then displays the house result to the user
+ * Collect the scores and add to finalScore array, sort from highest to lowest point score, display the house result to the user
  */
 function collectResultsAndDisplayHouse() {
   let finalScores = [{
@@ -139,6 +139,7 @@ function collectResultsAndDisplayHouse() {
   document.getElementById('results-page').classList.remove('hidden');
   document.getElementById(finalScores[0].elementId).classList.remove('hidden');
 }
+
 /**
  * Resets all scores, hides results-page and quiz-page, and returns to the main screen
  */
@@ -158,4 +159,5 @@ function startAgainFromMenu() {
   document.getElementById('slytherin-result').classList.add('hidden');
 }
 
+// Event listener to restart the quiz if "start again" button is clicked
 document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);

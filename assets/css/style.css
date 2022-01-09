@@ -294,3 +294,7 @@ li {
   margin: 5px 0px;
   text-align: center;
 }
+
+hr {
+  border: 1px solid #ffd700;
+}

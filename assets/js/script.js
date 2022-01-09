@@ -133,7 +133,8 @@ function collectResultsAndDisplayHouse() {
   }, {
     elementId: 'slytherin-result',
     points: slytherinScore
-  }]
+  }];
+  
   finalScores.sort((a, b) => (b.points - a.points));
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('results-page').classList.remove('hidden');

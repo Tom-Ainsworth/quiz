@@ -110,49 +110,39 @@ function checkAnswerResult() {
  */
 function collectResultsAndDisplayHouse() {
   let finalScores = [{
-    house: "Gryffindor",
-    points: gryffindorScore
-  }, {
-    house: "Ravenclaw",
-    points: ravenclawScore
-  }, {
-    house: "Hufflepuff",
-    points: hufflepuffScore
-  }, {
-    house: "Slytherin",
-    points: slytherinScore
-  }];
+      elementId: 'gryffindor-result',
+      points: gryffindorScore
+    }, {
+      elementId: 'ravenclaw-result',
+      points: ravenclawScore
+    }, {
+      elementId: 'hufflepuff-result',
+      points: hufflepuffScore
+    }, {
+      elementId: 'slytherin-result',
+      points: slytherinScore
+    }
+]
+finalScores.sort((a, b) => (b.points - a.points));
+console.log(finalScores);
+document.getElementById('quiz-page').classList.add('hidden');
+document.getElementById('results-page').classList.remove('hidden');
+document.getElementById(finalScores[0].elementId).classList.remove('hidden');
+console.log(finalScores[0]);
+}
+/**
+ * Resets all scores and returns to the main screen
+ */
+function startAgainFromMenu() {
+  gryffindorScore = 0;
+  ravenclawScore = 0;
+  hufflepuffScore = 0;
+  slytherinScore = 0;
+  runningQuestion = 0;
 
-  finalScores.sort((a, b) => (b.points - a.points));
-
-  let topScore = finalScores[0].house;
-  document.getElementById('btn-submit').classList.add('hidden');
   document.getElementById('quiz-page').classList.add('hidden');
-  document.getElementById('results-page').classList.remove('hidden');
-
-  if (!(topScore === "Gryffindor") && !(topScore === "Ravenclaw") && !(topScore === "Hufflepuff")) {
-    document.getElementById('slytherin-result').classList.remove('hidden');
-  } else if (!(topScore === "Gryffindor") && !(topScore === "Ravenclaw") && !(topScore === "Slytherin")) {
-    document.getElementById('hufflepuff-result').classList.remove('hidden');
-  } else if (!(topScore === "Gryffindor") && !(topScore === "Hufflepuff") && !(topScore === "Slytherin")) {
-    document.getElementById('ravenclaw-result').classList.remove('hidden');
-  } else if (!(topScore === "Ravenclaw") && !(topScore === "Hufflepuff") && !(topScore === "Slytherin")) {
-    document.getElementById('gryffindor-result').classList.remove('hidden');
-  }
+  document.getElementById('home-page').classList.remove('hidden');
+  document.getElementById('results-page').classList.add('hidden');
 }
 
-  /**
-   * Resets all scores and returns to the main screen
-   */
-  function startAgainFromMenu() {
-    gryffindorScore = 0;
-    ravenclawScore = 0;
-    hufflepuffScore = 0;
-    slytherinScore = 0;
-    runningQuestion = 0;
-
-    document.getElementById('quiz-page').classList.add('hidden');
-    document.getElementById('home-page').classList.remove('hidden');
-  }
-
-  document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);
+document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);

@@ -78,6 +78,8 @@ li {
   height: 100%;
   position: absolute;
   padding: 5px;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .border-inner {
@@ -132,7 +134,7 @@ li {
 .quiz-btn {
   color: #ffd700;
   background-color: #000000;
-  margin: 10px;
+  margin-top: 10px;
   padding: 8px 10px;
   font-size: 20px;
   text-transform: uppercase;
@@ -146,13 +148,6 @@ li {
 #start-quiz-btn:hover {
   color: #000000;
   background-color: #ffd700;
-}
-
-#start-again-btn-div {
-  position: absolute;
-  left: 10%;
-  bottom: 0px;
-  right: 10%;
 }
 
 /* Button styling adapted from https://codepen.io/ig_design/pen/dLNKgM Client Budget Section */
@@ -283,6 +278,7 @@ li {
   width: 100%;
   max-width: 220px;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 #instructions-page ul {
   width: 90%;
@@ -297,4 +293,11 @@ li {
 
 hr {
   border: 1px solid #ffd700;
+}
+/* End of Instructions Page Styling */
+
+/* Media Queries */
+
+@media screen and (min-width: 481px) {
+  
 }

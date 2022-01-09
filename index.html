@@ -23,7 +23,7 @@
 
 <body>
   <!-- Golden border divs surrounding all content -->
-  <div id="border-outer">
+  <div id="border-outer" class="hidden">
     <div class="border-inner">
 
       <!-- Home page -->
@@ -47,17 +47,6 @@
         <!-- Button to start quiz -->
         <button id="start-quiz-btn" class="quiz-btn">Start Quiz</button>
         <button id="instructions-btn" class="quiz-btn">Instructions</button>
-      </section>
-
-      <!-- Instructions Page -->
-      <section id="instructions-page" class="hidden">
-        <h2>Instructions</h2>
-        <p>
-          So you've come to find out which house you'll be in when you get to hogwarts?
-          <br />
-          Well there are a few things you might want to know before you commit to this fine school of Witchcraft & Wizardry...
-        </p>
-        
       </section>
 
       <!-- Quiz Page -->
@@ -110,6 +99,31 @@
       </section>
     </div>
   </div>
+
+  <!-- Instructions Page -->
+  <section id="instructions-page" class="">
+    <div class="border-inner">
+      <div id="instructions-content-box">
+        <h2>Instructions</h2>
+        <p>
+          So you've come to find out which house you'll be in when you get to hogwarts?
+          <br />
+          Well there are a few things you might want to know before you commit to this fine school of Witchcraft &
+          Wizardry...
+        </p>
+        <!-- List of Instructions -->
+        <ul>
+          <li>
+            As you may have noticed, this is an instructions page on how to find the Hogwarts House most suited to
+            you. To begin, return to the main menu, and press "Start Quiz"
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- script.js file link -->
   <script src="assets/js/script.js"></script>

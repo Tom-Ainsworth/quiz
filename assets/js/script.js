@@ -1,3 +1,4 @@
+// Only initiate javascript once the whole window is loaded
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
@@ -27,9 +28,14 @@ const questions = [{
   },
 ];
 
-// Global variables for html elements
+// Global variables and listeners for html elements
 const currentQuestion = document.getElementById('current-question');
 const answers = document.getElementById('answer-options');
+const answerOptions = document.getElementById('answer-options');
+const submit = document.getElementById('btn-submit');
+const lastQuestion = questions.length;
+document.getElementById('start-quiz-btn').addEventListener('click', showNextQuestion);
+
 let submitBtn = document.getElementById('btn-submit');
 submitBtn.addEventListener('click', function (event) {
   event.preventDefault();
@@ -38,14 +44,14 @@ submitBtn.addEventListener('click', function (event) {
 
 // Question & Score counters
 let runningQuestion = 0;
-const answerOptions = document.getElementById('answer-options');
-const submit = document.getElementById('btn-submit');
-const lastQuestion = questions.length;
 let gryffindorScore = 0;
 let ravenclawScore = 0;
 let hufflepuffScore = 0;
 let slytherinScore = 0;
 
+/**
+ * Display the "quiz-page" html, show each question in order if there are ny left otherwise call the collectResultsAndDisplayHouse.
+ */
 function showNextQuestion() {
   if (runningQuestion < lastQuestion) {
     const questionArray = questions[runningQuestion];
@@ -82,11 +88,17 @@ function showNextQuestion() {
   }
 }
 
+/**
+ * When the submit button is clicked call the relavent functions to progress the quiz
+ */
 function submitAnswer() {
   checkAnswerResult();
   showNextQuestion();
 }
 
+/**
+ * Check which answer-option has been checked, and record the result. Otherwise display an alert if nothing is selected.
+ */
 function checkAnswerResult() {
   if (document.getElementById('option-1').checked) {
     gryffindorScore++;
@@ -106,7 +118,7 @@ function checkAnswerResult() {
 }
 
 /**
- * Collects the scores from all 4 houses, sorts them from highest to lowest point score, then displays the house result to the user
+ * Collect the scores from all 4 houses, sorts them from highest to lowest point score, then displays the house result to the user
  */
 function collectResultsAndDisplayHouse() {
   let finalScores = [{
@@ -123,14 +135,12 @@ function collectResultsAndDisplayHouse() {
     points: slytherinScore
   }]
   finalScores.sort((a, b) => (b.points - a.points));
-  console.log(finalScores);
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('results-page').classList.remove('hidden');
   document.getElementById(finalScores[0].elementId).classList.remove('hidden');
-  console.log(finalScores[0]);
 }
 /**
- * Resets all scores and returns to the main screen
+ * Resets all scores, hides results-page and quiz-page, and returns to the main screen
  */
 function startAgainFromMenu() {
   gryffindorScore = 0;

@@ -35,6 +35,11 @@ h2 {
   border-radius: 10%;
 }
 
+h3 {
+  font-size: 20px;
+
+}
+
 #current-question {
   height: 100px;
   border: none;
@@ -109,14 +114,13 @@ footer li {
 
 /* Button/Link Styling */
 
-#start-quiz-btn {
-  color: #ffd700;
-  margin-top: 5px;
-  padding: 8px 10px;
+#start-quiz-btn,
+#instructions-btn {
+  width: 40%;
+  margin: 5px auto 5px;
   font-size: 25px;
-  text-transform: uppercase;
-  border: 3px solid #ffd700;
-  border-radius: 10px;
+  display: block;
+  box-sizing: content-box;
 }
 
 #start-quiz-btn:hover {

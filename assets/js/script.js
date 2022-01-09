@@ -143,6 +143,10 @@ function startAgainFromMenu() {
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('home-page').classList.remove('hidden');
   document.getElementById('results-page').classList.add('hidden');
+  document.getElementById('gryffindor-result').classList.add('hidden');
+  document.getElementById('ravenclaw-result').classList.add('hidden');
+  document.getElementById('hufflepuff-result').classList.add('hidden');
+  document.getElementById('slytherin-result').classList.add('hidden');
 }
 
 document.getElementById('start-again-btn').addEventListener('click', startAgainFromMenu);

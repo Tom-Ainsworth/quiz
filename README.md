@@ -105,33 +105,30 @@ I have included mockups for mobile, tablet and desktop wireframes, all of which 
 [See All Features](assets/readme-content/features.md)
 ### Current Features
 
-1. The navigation bar is central and at the top of the page on all devices. It lays out the flow of the page and links smoothly to the appropriate section.
-![Nav Bar](assets/readme-content/images/iphone-12-navbar.jpg)
+1. The Home Page is the first thing the user sees on entering the site. It shows a clear title and has some text to introduce what the site does.
+![Home Page](assets/readme-content/images/features/feature-homepage-ipad-landscape.png)
 
-1. The colour scheme has been chosen to maximise contrast between foreground and background elements. Where text is features over an image, an overlay or background has been applied to make it more visible.
-![Hero Text](assets/readme-content/images/hero-image-feature.png)
+1. Call to Action Buttons are all over the site, and are the only way for the user to navigate the site. As such, they need to be clear in what they do so there is no confusion for the user.
+![CTA Buttons](assets/readme-content/images/features/feature-call-to-action-buttons.png)
 
-1. The description section tells the user briefly what it is that the company does, leaving no guess work.
-![Description Feature](assets/readme-content/images/description-feature.png)
+1. The Quiz Page is most likely where the user will spend most of their time. It has a simple layout, and utilises innerHTML to display each question in order.
+![CTA Buttons](assets/readme-content/images/features/feature-quiz-iphone-12.png)
 
-1. Buttons have been added around relevant elements to encourage the user to interact with the site. The button changes on hover to let the user know it is clickable.
-![CTA Buttons](assets/readme-content/images/call-to-action-feature.png)
+1. The Start Again Button gives the user te chance to erase their current answer scores and return to the main menu to start fresh
+![Start Again Button](assets/readme-content/images/features/feature-start-again-button.png)
 
-1. The shows section has a matching image with information where possible to draw the user into the section.
-![Shows Feature](assets/readme-content/images/shows-feature.png)
+1. By letting the user select an option before submitting it, they are less likely to choose an option they didn't mean to. The selected option is always highlighted, about because they are radio buttons, only one can be selected and submitted. An alert will show should the user press submit without choosing an option.
+![Option Selected](assets/readme-content/images/features/feature-option-selected.png)
 
-1. The about section has a text overlay effect on hover for each image, allowing the user to interact and choose the information they wish to view.
-![About Feature](assets/readme-content/images/about-feature.png)
+1. The Submit button is also required to process the users current answer. This is once again to allow an extra step for the user to be sure that they want to continue. Once this has ben pressed, a function will run to determine the next step.
+![Option Selected](assets/readme-content/images/features/feature-submit-button.png)
 
-1. The contact form allows users to get in touch the Blackshaw Theatre, and stands out from the rest of the site, with inverted colours.
-![Contact Feature](assets/readme-content/images/contact-feature.png)
+1. The Results Page hides the quiz, and displays the house with the most answers. In the event of a tied score, the function will return the house closest to the start of the array (Gryffindor, Ravenclaw, Hufflepuff, Slytherin). This way the user still has a single answer, rather than splitting in half.
+![Results Page](assets/readme-content/images/features/feature-results-ipad-landscape.png)
 
-1. The submit button at the botton of the contact form stands out, encouraging users to complete and send the form. It has a hover effect, and an animation when pressed.
-![Submit Hover Feature](assets/readme-content/images/submit-hover-feature.png)
-![Submit Click Feature](assets/readme-content/images/submit-click-feature.png)
+1. The Instructions page is an optional extra for any user who does not know what the Sorting Hat does. It displays a list of friendly, thematic instructions to give the user full details on what the website does.
+[Instructions Page](feature-instructions-iphone-12.png)
 
-1. The footer contains social links that open in a new tab, with a nopener property for added userr security.
-![Footer Feature](assets/readme-content/images/footer-feature.png)
 
 ### Features Left to Implement
 

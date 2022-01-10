@@ -11,6 +11,7 @@
 - [Option Selected](#option-selected)
 - [Submit Button](#submit-button)
 - [Results Page](#results-page)
+- [Instructions Page](#instructions-page)
 
 ## Home Page
 

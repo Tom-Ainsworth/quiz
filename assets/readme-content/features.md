@@ -11,9 +11,6 @@
 - [Option Selected](#option-selected)
 - [Submit Button](#submit-button)
 - [Results Page](#results-page)
-- [Contact](#contact)
-- [Submit Button](#submit-button)
-- [Footer](#footer)
 
 ## Home Page
 
@@ -22,11 +19,11 @@
 
 ### iPad Portrait
 
-![iPad Portrait](images/features/feature-homepage-ipad-portrait.PNG)
+![iPad Portrait](images/features/feature-homepage-ipad-portrait.png)
 
 ### iPad Landscape
 
-![iPad Landscape](images/features/feature-homepage-ipad-landscape.PNG)
+![iPad Landscape](images/features/feature-homepage-ipad-landscape.png)
 
 ### Macbook Pro 16
 
@@ -39,15 +36,15 @@
 ## Quiz Page
 
 ### iPhone 12
-![iphone 12](images/features/feature-quiz-iphone-12.PNG)
+![iphone 12](images/features/feature-quiz-iphone-12.png)
 
 ### iPad Portait
 
-![iPad Portrait](feature-quiz-ipad-portrait.PNG)
+![iPad Portrait](images/features/feature-quiz-ipad-portrait.png)
 
 ### iPad Landscape
 
-![iPad Landscape](images/features/feature-quiz-ipad-landscape.PNG)
+![iPad Landscape](images/features/feature-quiz-ipad-landscape.png)
 
 ### Macbook Pro 16
 
@@ -59,40 +56,41 @@
 
 ## Option Selected
 
-![Option Selected](images/features/)
+![Option Selected](images/features/feature-option-selected.png)
 
 ## Submit Button
-![Submit Button](images/features/)
+![Submit Button](images/features/feature-submit-button.png)
+
 ## Results Page
 
 ### iPhone 12
-![iphone 12](images/features/)
+![iphone 12](images/features/feature-results-iphone-12.png)
 
 ### iPad Portrait
 
-![iPad](images/features/)
+![iPad](images/features/feature-results-ipad-portrait.png)
 
 ### iPad Landscape
 
-![iPad Landscape](images/features/)
+![iPad Landscape](images/features/feature-results-ipad-landscape.png)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/features/)
+![Macbook Pro 16](images/features/feature-results-macbookpro16.png)
 
 ## Instructions Page
 
 ### iPhone 12
-![iphone 12](images/features/)
+![iphone 12](images/features/feature-instructions-iphone-12.png)
 
 ### iPad Portrait
 
-![iPad](images/features/)
+![iPad](images/features/feature-instructions-ipad-portrait.png)
 
 ### iPad Landscape
 
-![iPad Landscape](images/features/)
+![iPad Landscape](images/features/feature-instructions-ipad-landscape.png)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/features/)
+![Macbook Pro 16](images/features/feature-instructions-ipad-landscape.png)

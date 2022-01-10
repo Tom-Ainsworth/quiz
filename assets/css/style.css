@@ -323,7 +323,7 @@ li {
   p, li {
     font-size: 18px;
   }
-  #border-outer, #instructions-page {
+  #home-page, #quiz-page, #results-page, #instructions-page {
     max-width: 950px;
     margin: 0 auto;
   }

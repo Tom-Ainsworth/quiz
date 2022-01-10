@@ -259,7 +259,6 @@ function startAgainFromMenu() {
   document.getElementById('hufflepuff-result').classList.add('hidden');
   document.getElementById('slytherin-result').classList.add('hidden');
   document.getElementById('instructions-page').classList.add('hidden');
-  document.getElementById('border-outer').classList.remove('hidden');
 }
 
 // Event listener to restart the quiz if "start again" button is clicked
@@ -267,6 +266,5 @@ document.getElementById('start-again-btn').addEventListener('click', startAgainF
 // Event listener to initiate instructions page and hide other content if button is clicked on the homepage
 document.getElementById('instructions-btn').addEventListener('click', function () {
   document.getElementById('home-page').classList.add('hidden');
-  document.getElementById('border-outer').classList.add('hidden');
   document.getElementById('instructions-page').classList.remove('hidden');
 });

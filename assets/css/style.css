@@ -72,44 +72,18 @@ li {
 
 /* Border Styling */
 
-#border-outer {
-  position: absolute;
-}
-
-#instructions-page {
-  position: relative;
-}
-
-#border-outer, #instructions-page {
-  border: 2px solid #000;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  margin: 0 auto;
-}
-
-.border-inner {
-  border: 2px solid #ffd700;
-  box-sizing: border-box;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding: 5px;
-}
-
 #home-page,
 #quiz-page,
 #results-page,
-#instructions-content-box {
-  border: 2px solid #DC9104;
+#instructions-page {
+  border: 2px solid #ffd700;
   box-sizing: border-box;
   border-radius: 10px;
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   padding: 5px;
+  margin: 0 auto;
 }
 
 /* End of Border Styling */

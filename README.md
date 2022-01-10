@@ -1,5 +1,5 @@
-# Blackshaw Theatre
-## Portfolio Project 1 - HTML/CSS
+# Harry Potter Sorting Hat Quiz
+## Portfolio Project 2 - Javascript
 
 ![Multiple Device Demo](assets/readme-content/images/mutliple-device-mockup.png)
 
@@ -79,13 +79,13 @@ The website should have:
 
 -   ### UXD User Experience Design
     -   #### Colour Scheme
-    I used [coolors.co](coolors.co) to generate the colour scheme and check contrast values.
+    I used [coolors.co](https://coolors.co/) to generate the colour scheme and check contrast values.
     !(assets/readme-content/images/color-palette.png)
         -   I kept the colour scheme simple to aid accessibility. The site features a black background throughout, with predominantly whit text. For the buttons and border I chose to use a shade of gold #ffd700 as it stands out and has a high contrast score, allowing all users to see the content at all times
     -   #### Typography
         -   I used [Google Fonts](https://fonts.google.com/) to get a combination of EB Garamond for the headings and buttons, and Open-Sans for the rest of the text. Garamond looks quite similar to some of the fonts used in the Harry Potter franchise, and is more widely available than using a custom font to get it exactly right. Open sans looks great next to it for more informative sections including the instructions and answer options.
     -   #### Imagery
-        -   The images used were from, [ShutterStock](https://www.shutterstock.com/) results images, and [Icon Finder](https://www.iconfinder.com/) for the favicons. I was pleased that the results images were vector images, making it incredibly easy to resize to the exact measurements I needed, therefore not loading any unnecessary files.
+        -   The images used were from, [ShutterStock](https://www.shutterstock.com/) results images, and [Icon Finder](https://www.iconfinder.com/) for the favicons. I was pleased that the results images were vector images, making it incredibly easy to resize to the exact measurements I needed, therefore not loading any unnecessary files. To compress the images I used [TinyPNG](https://tinypng.com/).
 
 ## Initial Plan
 
@@ -97,9 +97,8 @@ As the main focus was on the Javascript behind the scenes. I was able to keep th
 
 [Wireframes - Seperate document](assets/readme-content/wireframes.md)
 
-I have included both mobile and desktop wireframes to demonstrate the progression in the project. As you can see, the core elements remain for both sets, but the layout is far closer to the mobile wireframes than desktop.
-
-Though tablet wireframes were not made seperately, I knew that by having a mobile first approach, I would be able to scale the site up to tablet sizes relatively easily.
+I have included mockups for mobile, tablet and desktop wireframes, all of which are virtually the same design with different sizes.
+![Mobile Wireframes](assets/readme-content/images/wireframes/wireframes-all-mobile.png)
 
 ## Features
 

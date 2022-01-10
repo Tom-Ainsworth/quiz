@@ -247,22 +247,22 @@ li {
 }
 
 #gryffindor-image {
-  background: url(../images/mobile-gryffindor-robe.png) no-repeat center top;
+  background: url(../images/mobile-320-gryffindor-result.png) no-repeat center top;
   overflow: hidden;
 }
 
 #ravenclaw-image {
-  background: url(../images/mobile-ravenclaw-robe.png) no-repeat center top;
+  background: url(../images/mobile-320-ravenclaw-result.png) no-repeat center top;
   overflow: hidden;
 }
 
 #hufflepuff-image {
-  background: url(../images/mobile-hufflepuff-robe.png) no-repeat center top;
+  background: url(../images/mobile-320-hufflepuff-result.png) no-repeat center top;
   overflow: hidden;
 }
 
 #slytherin-image {
-  background: url(../images/mobile-slytherin-result.png) no-repeat center top;
+  background: url(../images/mobile-320-slytherin-result.png) no-repeat center top;
   overflow: hidden;
 }
 
@@ -300,6 +300,34 @@ hr {
 /* Media Queries */
 
 @media screen and (min-width: 481px) {
+
+  h1 {
+    margin: 30px auto 30px;;
+  }
+  .results-image {
+    height: 330px;
+    width: 385px;
+    margin: auto;
+  }
+
+  #gryffindor-image {
+    background: url(../images/mobile-481-gryffindor-result.png) no-repeat center top;
+    overflow: hidden;
+  }
   
+  #ravenclaw-image {
+    background: url(../images/mobile-481-ravenclaw-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+  
+  #hufflepuff-image {
+    background: url(../images/mobile-481-hufflepuff-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+  
+  #slytherin-image {
+    background: url(../images/mobile-481-slytherin-result.png) no-repeat center top;
+    overflow: hidden;
+  }
 }
 

@@ -13,6 +13,11 @@ body {
   padding: 0;
 }
 
+#content-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 h1 {
   font-size: 32px;
   width: 80%;
@@ -82,7 +87,8 @@ li {
   width: 100%;
   height: 100%;
   padding: 5px;
-  margin: 0 auto;
+  margin: auto;
+  position: relative;
 }
 
 /* End of Border Styling */
@@ -323,7 +329,6 @@ li {
     font-size: 18px;
   }
   #home-page, #quiz-page, #results-page, #instructions-page {
-    max-width: 950px;
     margin: 0 auto;
   }
 

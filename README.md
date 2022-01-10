@@ -253,10 +253,12 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Code
 
--   The full-screen hero image code came from this [Pexels page](https://www.pexels.com/photo/silhouette-photography-of-people-on-theater-1714361/)
+-   The original codepen code to style the radio buttons can be found [here](https://codepen.io/ig_design/pen/dLNKgM)
 
 -   [W3Schools](https://www.w3schools.com/) : For various tutorials and explanations of properties. 
-    - 
+
+- [Stack Overflow](https://stackoverflow.com/) : For various javascript references.
+
 - Code was used from [Google Fonts](https://fonts.google.com/) to import the font family within my CSS file.
 
 ### Content

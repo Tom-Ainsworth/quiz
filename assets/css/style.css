@@ -120,6 +120,8 @@ li {
 #current-question {
   margin: 10px auto 70px;
   padding-bottom: 5px;
+  border: 2px solid #f5f5f5;
+  border-radius: 0.25em;
 }
 
 #start-quiz-btn,
@@ -288,12 +290,10 @@ li {
 }
 
 #instructions-page li {
-  margin: 5px 0px;
+  margin-top: 5px;
   text-align: center;
-}
-
-hr {
-  border: 1px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  padding: 5px 0px 10px;
 }
 /* End of Instructions Page Styling */
 
@@ -301,8 +301,12 @@ hr {
 
 @media screen and (min-width: 481px) {
 
-  h1 {
+  #main-title {
     margin: 30px auto 30px;;
+  }
+
+  #main-subtitle {
+    margin: 20px auto 40px;
   }
   .results-image {
     height: 330px;
@@ -331,3 +335,30 @@ hr {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .results-image {
+    height: 527px;
+    width: 615px;
+    margin: auto;
+  }
+
+  #gryffindor-image {
+    background: url(../images/tablet-769-gryffindor-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+  
+  #ravenclaw-image {
+    background: url(../images/tablet-769-ravenclaw-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+  
+  #hufflepuff-image {
+    background: url(../images/tablet-769-hufflepuff-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+  
+  #slytherin-image {
+    background: url(../images/tablet-769-slytherin-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+}

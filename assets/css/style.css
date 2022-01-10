@@ -332,6 +332,12 @@ li {
     font-size: 18px;
   }
 
+  .answer-option:checked+label, .answer-option:not(:checked)+label {
+    width: 60%;
+    font-size: 20px;
+  }
+
+
   .results-image {
     height: 450px;
     width: 615px;
@@ -367,6 +373,20 @@ li {
     width: 720px;
     margin: auto;
   }
+
+  .answer-option:checked+label, .answer-option:not(:checked)+label {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  #current-question {
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 20
+  };
+
 }
 
 @media screen and (min-height: 569px) {

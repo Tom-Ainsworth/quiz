@@ -83,15 +83,15 @@ The website should have:
     !(assets/readme-content/images/color-palette.png)
         -   I kept the colour scheme simple to aid accessibility. The site features a black background throughout, with predominantly whit text. For the buttons and border I chose to use a shade of gold #ffd700 as it stands out and has a high contrast score, allowing all users to see the content at all times
     -   #### Typography
-        -   Domine is the primary font used on the page, with Serif as a backup. Initially I chose Open-Sans as the font, with Domine as a backup/extra font, however I found that I wasn't changing the font on any areas of the page. As a result I chose to solely use Domine, as it is a lighter font than Open-Sans, and Serif is more widely available should Domine fail to render.
+        -   I used [Google Fonts](https://fonts.google.com/) to get a combination of EB Garamond for the headings and buttons, and Open-Sans for the rest of the text. Garamond looks quite similar to some of the fonts used in the Harry Potter franchise, and is more widely available than using a custom font to get it exactly right. Open sans looks great next to it for more informative sections including the instructions and answer options.
     -   #### Imagery
-        -   The images used were from the client, and also [Pexels](https://www.pexels.com/) for the hero image, and Miss McSkimming show. The large, background hero image is designed to be striking and catch the user's attention. It features a theatre cast on stage under the lights, to evoke an emotive response of excitement and professionalism in the user. The dark image matches the colour scheme of the site well, contrasting with the logo at the top. The boat image is to give a little bit of context to the show it relates to, and help the user envisage the scene. About section features high resolution images of the relevant staff member.
+        -   The images used were from, [ShutterStock](https://www.shutterstock.com/) results images, and [Icon Finder](https://www.iconfinder.com/) for the favicons. I was pleased that the results images were vector images, making it incredibly easy to resize to the exact measurements I needed, therefore not loading any unnecessary files.
 
 ## Initial Plan
 
- At the start of the project, the plan was to create a multi page site split into the sectons required by the client seen [here](assets/readme-content/wireframes.md). After further consultion with my mentor Antonio Rodriguez, we agreed that a mobile first would be a more appropriate method, as it means less clicking for the user, quicker load times for the page, as I wouldn't have to keep repeating header and footer code. This change work well for the client too.
+This project was definitely a huge learning curve in comparison to HTML and CSS. I went back and forth on a few ideas before landing on the quiz, including a Blackjack game and Connect4. Once I'd settled on this, I first wanted to have a single answer be the correct one from each question, but I thought it would be more fun for the user to have a sorting hat quiz that could collect the results and sort them in order of the highest score, resulting in a house choice.
  
- The mobile wireframes are the final idea, and then the desktop site was built around this design.
+As the main focus was on the Javascript behind the scenes. I was able to keep the design fairly simple. Starting with a mobile first approach, I essentially just scaled various part up to suit the larger displays.
 
 ### Wireframes
 

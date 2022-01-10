@@ -10,41 +10,41 @@
 ## Mobile
 
 ### Home
-![Home](images/mobile-wireframe-home.png)
+![Home](images/wireframes/wireframe-mobile-home.png)
 
 ### Quiz
-![Description](images/mobile-wireframe-description.png)
+![Quiz](images/wireframes/wireframe-mobile-home.png)
 
 ### Results
-![Shows](images/mobile-wireframe-shows.png)
+![Results](images/wireframes/wireframe-mobile-results.png)
 
 ### Instructions
-![About](images/mobile-wireframe-about.png)
-
+![Instructions](images/wireframes/wireframe-mobile-instructions.png)
+***
 ## Tablet
 
 ### Home
-![Home](images/desktop-wireframe-home.png)
+![Home](images/wireframes/wireframe-tablet-home.png)
 
-### Quiz 
-![Shows](images/desktop-wireframe-shows.png)
+### Quiz
+![Quiz](images/wireframes/wireframe-tablet-quiz.png)
 
 ### Results
-![About](images/desktop-wireframe-about.png)
+![Results](images/wireframes/wireframe-tablet-results.png)
 
 ### Instructions
-![Contact](images/desktop-wireframe-contact.png)
+![Instructions](images/wireframes/wireframe-tablet-instructions.png)
 ***
 ## Desktop
 
 ### Home
-![Home](images/desktop-wireframe-home.png)
+![Home](images/wireframes/wireframe-desktop-home.png)
 
-### Quiz 
-![Shows](images/desktop-wireframe-shows.png)
+### Quiz
+![Quiz](images/wireframes/wireframe-desktop-quiz.png)
 
 ### Results
-![About](images/desktop-wireframe-about.png)
+![Results](images/wireframes/wireframe-desktop-results.png)
 
 ### Instructions
-![Contact](images/desktop-wireframe-contact.png)
+![Instructions](images/wireframes/wireframe-desktop-instructions.png)

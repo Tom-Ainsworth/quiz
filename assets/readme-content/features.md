@@ -30,32 +30,32 @@
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/features/)
+![Macbook Pro 16](images/features/feature-homepage-macbookpro16.png)
 
 ## Call to Action Buttons
 
-![Call to Action Buttons](images/features/)
+![Call to Action Buttons](images/features/feature-call-to-action-buttons.png)
 
 ## Quiz Page
 
 ### iPhone 12
-![iphone 12](images/features/)
+![iphone 12](images/features/feature-quiz-iphone-12.PNG)
 
 ### iPad Portait
 
-![iPad Portrait](images/features/)
+![iPad Portrait](feature-quiz-ipad-portrait.PNG)
 
 ### iPad Landscape
 
-![iPad Landscape](images/features/)
+![iPad Landscape](images/features/feature-quiz-ipad-landscape.PNG)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/features/)
+![Macbook Pro 16](images/features/feature-quiz-macbookpro16.png)
 
 ## Start Again Button
 
-![Start Again Button]()
+![Start Again Button](images/features/feature-start-again-button.png)
 
 ## Option Selected
 

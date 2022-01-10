@@ -259,6 +259,7 @@ function startAgainFromMenu() {
   document.getElementById('hufflepuff-result').classList.add('hidden');
   document.getElementById('slytherin-result').classList.add('hidden');
   document.getElementById('instructions-page').classList.add('hidden');
+  document.getElementById('content-container').style.position = "absolute";
 }
 
 // Event listener to restart the quiz if "start again" button is clicked
@@ -267,4 +268,5 @@ document.getElementById('start-again-btn').addEventListener('click', startAgainF
 document.getElementById('instructions-btn').addEventListener('click', function () {
   document.getElementById('home-page').classList.add('hidden');
   document.getElementById('instructions-page').classList.remove('hidden');
+  document.getElementById('content-container').style.position = "relative";
 });

@@ -4,7 +4,7 @@
 body {
   background: black;
   overflow-x: hidden;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Open-Sans', serif;
   font-size: 16px;
   color: white;
   text-align: center;
@@ -38,6 +38,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'EB Garamond', serif;
   font-size: 22px;
   width: 100%;
   margin: 10px auto 10px;
@@ -113,6 +114,7 @@ li {
 }
 
 .quiz-btn {
+  font-family: 'EB Garamond', serif;
   color: #ffd700;
   background-color: #000000;
   margin-top: 10px;

@@ -79,7 +79,9 @@ The website should have:
 
 -   ### UXD User Experience Design
     -   #### Colour Scheme
-        -   I kept the colour scheme simple to aid accessibility. The current site used black and white, with an off white shade of #cdd0d4 used in the form section to allow it stand out from the background, while still being subtle.
+    I used [coolors.co](coolors.co) to generate the colour scheme and check contrast values.
+    !(assets/readme-content/images/color-palette.png)
+        -   I kept the colour scheme simple to aid accessibility. The site features a black background throughout, with predominantly whit text. For the buttons and border I chose to use a shade of gold #ffd700 as it stands out and has a high contrast score, allowing all users to see the content at all times
     -   #### Typography
         -   Domine is the primary font used on the page, with Serif as a backup. Initially I chose Open-Sans as the font, with Domine as a backup/extra font, however I found that I wasn't changing the font on any areas of the page. As a result I chose to solely use Domine, as it is a lighter font than Open-Sans, and Serif is more widely available should Domine fail to render.
     -   #### Imagery

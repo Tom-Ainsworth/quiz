@@ -6,6 +6,108 @@ document.getElementById('start-quiz-btn').addEventListener('click', showNextQues
 
 // Array of quiz questions
 const questions = [{
+    "title": "Which colour is your favourite?",
+    "optionA": "Red",
+    "optionB": "Blue",
+    "optionC": "Yellow",
+    "optionD": "Green"
+  }, {
+    "title": "What pet would you take with you to Hogwarts?",
+    "optionA": "Dog",
+    "optionB": "Owl",
+    "optionC": "Hamster",
+    "optionD": "Lizard"
+  }, {
+    "title": "Which personality trait do you most value?",
+    "optionA": "Courage",
+    "optionB": "Intelligence",
+    "optionC": "Kindness",
+    "optionD": "Ambition"
+  }, {
+    "title": "If you’re running a race and your friend trips over, do you…",
+    "optionA": "Carry them to the finish line",
+    "optionB": "Convince race officials to re-do the race",
+    "optionC": "Sit with your friend and comfort them",
+    "optionD": "Keep running, you need to win this!"
+  }, {
+    "title": "What sort of car would you drive?",
+    "optionA": "Range Rover",
+    "optionB": "Tesla",
+    "optionC": "VW campervan",
+    "optionD": "Lamborghini"
+  }, {
+    "title": "You accidentally break your mum’s vase do you…",
+    "optionA": "wn up to it and take the consequences",
+    "optionB": "Replace it with an identical vase",
+    "optionC": "Bake her an apology cake",
+    "optionD": "Find someone else to blame"
+  }, {
+    "title": "If you have spare time do you prefer to…",
+    "optionA": "Do sport",
+    "optionB": "Read a book",
+    "optionC": "Bake",
+    "optionD": "Watch fail videos on YouTube"
+  }, {
+    "title": "What would your favourite subject at Hogwarts be?",
+    "optionA": "Quidditch",
+    "optionB": "Ancient Runes ",
+    "optionC": "Herbology",
+    "optionD": "Potions"
+  }, {
+    "title": "If you could apparate to any holiday which would it be?",
+    "optionA": "White water rafting in Colorado ",
+    "optionB": "Historical tour of Rome",
+    "optionC": "Otter sanctuary in Wales",
+    "optionD": "Yachting in the Carribean"
+  }, {
+    "title": "Which Spice Girl would you be?",
+    "optionA": "Sporty",
+    "optionB": "Posh",
+    "optionC": "Baby",
+    "optionD": "Scary"
+  }, {
+    "title": "What’s your favourite book genre?",
+    "optionA": "Adventure",
+    "optionB": "Science fiction",
+    "optionC": "Cookbooks",
+    "optionD": "Crime thrillers"
+  }, {
+    "title": "If you were a TV series which would you be?",
+    "optionA": "SAS Who Dares Wins",
+    "optionB": "QI",
+    "optionC": "Planet Earth",
+    "optionD": "You"
+  }, {
+    "title": "What breed of dog would you be?",
+    "optionA": "German Shepherd",
+    "optionB": "Border Collie",
+    "optionC": "Golden retriever",
+    "optionD": "Doberman"
+  }, {
+    "title": "What sort of gift is your favourite to receive?",
+    "optionA": "Sporting goods",
+    "optionB": "Books",
+    "optionC": "Something homemade",
+    "optionD": "Cash"
+  }, {
+    "title": "What’s your favourite genre of music?",
+    "optionA": "Pop-rock",
+    "optionB": "Jazz",
+    "optionC": "Folk",
+    "optionD": "Heavy metal"
+  }, {
+    "title": "What’s your favourite season?",
+    "optionA": "Summer",
+    "optionB": "Autumn",
+    "optionC": "Spring",
+    "optionD": "Winter"
+  }, {
+    "title": "What shape would a boggart take when you face it?",
+    "optionA": "A dementor",
+    "optionB": "A failed exam",
+    "optionC": "An office job",
+    "optionD": "An empty Gringott’s vault"
+  }, {
     title: "What’s your favourite game?",
     optionA: "Wizard chess",
     optionB: "Scrabble",

@@ -262,7 +262,7 @@ li {
 }
 
 #slytherin-image {
-  background: url(../images/mobile-slytherin-robe.png) no-repeat center top;
+  background: url(../images/mobile-slytherin-result.png) no-repeat center top;
   overflow: hidden;
 }
 
@@ -280,6 +280,7 @@ li {
   box-sizing: border-box;
   margin-top: 10px;
 }
+
 #instructions-page ul {
   width: 90%;
   margin: 0 auto;
@@ -301,3 +302,4 @@ hr {
 @media screen and (min-width: 481px) {
   
 }
+

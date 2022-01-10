@@ -86,7 +86,6 @@ li {
   height: 100%;
   width: 100%;
   padding: 5px;
-  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -254,21 +253,25 @@ li {
 #gryffindor-image {
   background: url(../images/mobile-320-gryffindor-result.png) no-repeat center top;
   overflow: hidden;
+  width: 100%;
 }
 
 #ravenclaw-image {
   background: url(../images/mobile-320-ravenclaw-result.png) no-repeat center top;
   overflow: hidden;
+  width: 100%;
 }
 
 #hufflepuff-image {
   background: url(../images/mobile-320-hufflepuff-result.png) no-repeat center top;
   overflow: hidden;
+  width: 100%;
 }
 
 #slytherin-image {
   background: url(../images/mobile-320-slytherin-result.png) no-repeat center top;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Instructions Page Styling */
@@ -343,6 +346,15 @@ li {
 }
 
 @media screen and (min-width: 769px) {
+
+  p, li {
+    font-size: 18px;
+  }
+  #border-outer, #instructions-page {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
   .results-image {
     height: 450px;
     width: 615px;
@@ -371,5 +383,39 @@ li {
 
   .main-menu-btn {
     margin: 40px auto 0px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  #border-outer {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .results-image {
+    height: 600px;
+    width: 820px;
+    margin: auto;
+  }
+
+  #gryffindor-image {
+    background: url(../images/laptop-1025-gryffindor-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+
+  #ravenclaw-image {
+    background: url(../images/laptop-1025-ravenclaw-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+
+  #hufflepuff-image {
+    background: url(../images/laptop-1025-hufflepuff-result.png) no-repeat center top;
+    overflow: hidden;
+  }
+
+  #slytherin-image {
+    background: url(../images/laptop-1025-slytherin-result.png) no-repeat center top;
+    overflow: hidden;
   }
 }

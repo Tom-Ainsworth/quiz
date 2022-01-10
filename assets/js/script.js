@@ -30,9 +30,7 @@ const questions = [{
 
 // Global variables and listeners for html elements
 const currentQuestion = document.getElementById('current-question');
-const answers = document.getElementById('answer-options');
 const answerOptions = document.getElementById('answer-options');
-const submit = document.getElementById('btn-submit');
 const lastQuestion = questions.length;
 document.getElementById('start-quiz-btn').addEventListener('click', showNextQuestion);
 
@@ -62,7 +60,7 @@ function showNextQuestion() {
 
     // Inject template HTML into fieldset element
     currentQuestion.innerHTML = questionArray.title;
-    answerOptions.innerHTML = `  
+    answerOptions.innerHTML = `
       <input class="answer-option" type="radio" name="answers" id="option-1" required>
       <label class="answer-option" for="option-1">
         <span data-hover="${questionArray.optionA}">${questionArray.optionA}</span>
@@ -134,7 +132,7 @@ function collectResultsAndDisplayHouse() {
     elementId: 'slytherin-result',
     points: slytherinScore
   }];
-  
+
   finalScores.sort((a, b) => (b.points - a.points));
   document.getElementById('quiz-page').classList.add('hidden');
   document.getElementById('results-page').classList.remove('hidden');

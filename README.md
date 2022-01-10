@@ -132,11 +132,15 @@ I have included mockups for mobile, tablet and desktop wireframes, all of which 
 
 ### Features Left to Implement
 
-1. I would like to add a blog page, within the site, with a maintainable layout that can be easily edited or replicated for new entries.
-1. The hero image could be a slideshow of images, or a video of Blackshaw in action, increasing user retention.
-1. I would like the footer links to invert on hover, but just the image rather than any background behind it.
-1. Blackshaw Theatre have a podcast on Podbean. It would be useful to have a media player built in so users can listen through the website.
-1. A shopify site with ticket links on the site would be better than sending users to external sites to purchase tickets. For bigget shows this could really help with analytics when working out where traffic is coming from.
+1. I would like the quiz to display the question in a random order, and the answer options too. Currently, if a user were to click optionA for every answer, they would always get Gryffindor for their result. It would be more fun for the user to not be able to control this.
+
+1. I would like to implement a back button, and perhaps get rid of the submit button. I wasn't able to think of the logic required to create a back function that would work fully, so I thought that having the submit button would minimise potential user error during the quiz.
+
+1. I would like to add some sound effects to the quiz, that the user can toggle on or off. These could be general background music, as well as sounds that play on click, or depending on the result shown.
+
+1. I would like to add some keydown functionality, so that users without a mouse are able to fully control the site with ease. The keys used could be 'enter' for submit. A,B, C, D, for choosing an answer option. M for menu to return to the beginning. P for previous question. The possibilities are endless!
+
+1. As long as it did not hinder accessibilty, I would like to implement some background images through the quiz, perhaps even images depending one which answer was given.
 
 ## Technologies Used
 
@@ -144,15 +148,14 @@ I have included mockups for mobile, tablet and desktop wireframes, all of which 
 
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
 1. [CSS3](https://en.wikipedia.org/wiki/CSS)
+1. [JS](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Other Technologies
 
-1. [Pexels:](https://www.pexels.com/)
-    - Pexels was used for royalty free images seen in the Hero Image and Shows sectons.
+1. [ShutterStock:](https://www.shutterstock.com/)
+    - Shutterstock was used to get licensed images for the results page.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Domine' font into the style.css file which is used throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used for the footer social media icons.
+    - Google fonts were used to import the EB Garamond and Open Sans fonts.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [TinyPNG:](https://tinypng.com/)
@@ -160,7 +163,9 @@ I have included mockups for mobile, tablet and desktop wireframes, all of which 
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [Wireframes](assets/readme-content/wireframes.md) during the design process.
 1. [W3Schools:](https://www.w3schools.com/)
-    - W3Schools was used for quick access to tutorials, particularly for CSS.
+    - W3Schools was used for quick access to tutorials, particularly for Javascript methods.
+1. [CodePen:](https://codepen.io/) was used to test out ideas in real time, particilary for CSS.
+1. [Stack Overflow:](https://stackoverflow.com/) was used to referencee ideas and syntax, particulary in javascript.
 
 ## Testing
 
@@ -168,18 +173,25 @@ I have included mockups for mobile, tablet and desktop wireframes, all of which 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://validator.w3.org/#validate_by_uri) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftom-ainsworth.github.io%2Fblackshaw-theatre%2F)
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_uri) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftom-ainsworth.github.io%2Fsorting-hat-quiz%2F)
+![HTML Result](assets/readme-content/images/html-validation.png)
 
-![HTML Result](assets/readme-content/images/w3school-html-validation.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftom-ainsworth.github.io%2Fsorting-hat-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+![CSS Result](assets/readme-content/images/css-validation.png)
 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftom-ainsworth.github.io%2Fblackshaw-theatre%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+-   [JShint Code Quality Tool](https://jshint.com/) - ![JS Result](assets/readme-content/images/js-validation.png)
+With the default settings the only messages that come up are in relation to defining functions with const and let. With the configuration setting 'New JavaScript features (ES6)' active, no erros show (As demonstrated in the screenshot).
 
-![CSS Result](assets/readme-content/images/w3school-css-validation.png)
-    - 6 Warnings were found, with 4 relating to the nav bar border colour being the same
-        - 4 warnings about the nav bar border colour being the same as the background. This was due to the hover effect and so was not a concern.
-        - 2 warnings were related to code applied to placeholder colour, necessary when using the website in various browsers. I was also happy with this code being included.
-    
+### Lighthouse Testing
+
+- [LightHouse Testing](https://developers.google.com/web/tools/lighthouse)
+#### Mobile Testing
+![Mobile Testing](assets/readme-content/images/lighthouse-testing-mobile.png)
+
+#### Desktop Testing
+![Desktop Testing](assets/readme-content/images/lighthouse-testing-desktop.png)
+I'm unsurprisingly really pleased with these results. Both ran in Incognito mode as recommended.
 
 ### Testing User Stories
 

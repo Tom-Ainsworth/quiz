@@ -80,7 +80,7 @@ The website should have:
 -   ### UXD User Experience Design
     -   #### Colour Scheme
     I used [coolors.co](https://coolors.co/) to generate the colour scheme and check contrast values.
-    !(assets/readme-content/images/color-palette.png)
+    ![Colour Palette](assets/readme-content/images/color-palette.png)
         -   I kept the colour scheme simple to aid accessibility. The site features a black background throughout, with predominantly whit text. For the buttons and border I chose to use a shade of gold #ffd700 as it stands out and has a high contrast score, allowing all users to see the content at all times
     -   #### Typography
         -   I used [Google Fonts](https://fonts.google.com/) to get a combination of EB Garamond for the headings and buttons, and Open-Sans for the rest of the text. Garamond looks quite similar to some of the fonts used in the Harry Potter franchise, and is more widely available than using a custom font to get it exactly right. Open sans looks great next to it for more informative sections including the instructions and answer options.
@@ -257,9 +257,9 @@ The project was deployed to GitHub Pages using the following steps...
 
 -   [W3Schools](https://www.w3schools.com/) : For various tutorials and explanations of properties. 
 
-- [Stack Overflow](https://stackoverflow.com/) : For various javascript references.
+-   [Stack Overflow](https://stackoverflow.com/) : For various javascript references.
 
-- Code was used from [Google Fonts](https://fonts.google.com/) to import the font family within my CSS file.
+-   Code was used from [Google Fonts](https://fonts.google.com/) to import the font family within my CSS file.
 
 ### Content
 
@@ -268,7 +268,7 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Acknowledgements
 
--  My friends Richard Stratton & Ed Barron for support with some of the more complex javascript tasks, such as reading the radio button data, and turning that data into a result
+-   My friends Richard Stratton & Ed Barron for support with some of the more complex javascript tasks(for me at least!) such as reading the radio button data, and turning that data into a result
 
 -   My Mentor Antonio Rodriguez for helpful feedback and ideas, it amazes me how quickly and effectively you fix problems!
 

@@ -18,40 +18,40 @@
 ## Home Page
 
 ### iPhone 12
-![iphone 12](images/iphone-12-navbar.jpg)
+![iphone 12](images/features/feature-homepage-iphone-12.jpeg)
 
 ### iPad Portrait
 
-![iPad](images/ipad-navbar.jpg)
+![iPad Portrait](images/features/feature-homepage-ipad-portrait.PNG)
 
 ### iPad Landscape
 
-![iPad Landscape](images/ipad-navbar.jpg)
+![iPad Landscape](images/features/feature-homepage-ipad-landscape.PNG)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/laptop-navbar.png)
+![Macbook Pro 16](images/features/)
 
 ## Call to Action Buttons
 
-![Call to Action Buttons](images/description-feature.png)
+![Call to Action Buttons](images/features/)
 
 ## Quiz Page
 
 ### iPhone 12
-![iphone 12](images/iphone-12-navbar.jpg)
+![iphone 12](images/features/)
 
 ### iPad Portait
 
-![iPad Portrait](images/ipad-navbar.jpg)
+![iPad Portrait](images/features/)
 
 ### iPad Landscape
 
-![iPad Landscape](images/ipad-navbar.jpg)
+![iPad Landscape](images/features/)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/laptop-navbar.png)
+![Macbook Pro 16](images/features/)
 
 ## Start Again Button
 
@@ -59,41 +59,40 @@
 
 ## Option Selected
 
-![Option Selected](images/shows-feature.png)
+![Option Selected](images/features/)
 
 ## Submit Button
-![Submit Button](images/about-feature.png)
-
+![Submit Button](images/features/)
 ## Results Page
 
 ### iPhone 12
-![iphone 12](images/iphone-12-navbar.jpg)
+![iphone 12](images/features/)
 
 ### iPad Portrait
 
-![iPad](images/ipad-navbar.jpg)
+![iPad](images/features/)
 
 ### iPad Landscape
 
-![iPad Landscape](images/ipad-navbar.jpg)
+![iPad Landscape](images/features/)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/laptop-navbar.png)
+![Macbook Pro 16](images/features/)
 
 ## Instructions Page
 
 ### iPhone 12
-![iphone 12](images/iphone-12-navbar.jpg)
+![iphone 12](images/features/)
 
 ### iPad Portrait
 
-![iPad](images/ipad-navbar.jpg)
+![iPad](images/features/)
 
 ### iPad Landscape
 
-![iPad Landscape](images/ipad-navbar.jpg)
+![iPad Landscape](images/features/)
 
 ### Macbook Pro 16
 
-![Macbook Pro 16](images/laptop-navbar.png)
+![Macbook Pro 16](images/features/)

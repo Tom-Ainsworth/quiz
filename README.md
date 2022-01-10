@@ -193,100 +193,47 @@ With the default settings the only messages that come up are in relation to defi
 ![Desktop Testing](assets/readme-content/images/lighthouse-testing-desktop.png)
 I'm unsurprisingly really pleased with these results. Both ran in Incognito mode as recommended.
 
-### Testing User Stories
-
--   #### First Time Visitor Goals
-
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a brief description about the company.
-        2. The main points are made immediately with the hero image
-        3. Beneath the description are 2 calls to actions, users can find out more, or get in touch. With the fold displaying more content to encourage scrolling. 
-
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
-
-        1. The site has been designed to be fluid, with a clear navigation bar with links to all sections of the page. 
-        2. As mentioned, the call to action buttons are strategically placed between sections to give users something to interact with.
-        3. On the Contact Us Page, after a form response is submitted, the submitted form loads on a seperate tab, so the user can go straight back to the site should they wish.
-
-    3. As a First Time Visitor, I want to view the site on multiple devices at different times, and want the experience to be the same on all devices
-
-        1. I created media queries to keep the user experience the same on the vast majority of screen sizes, with responsive text and images throughout.
-        2. I added column-counts for tablet and desktop screen sizes to minimize scrolling, and display relevant content in the correct order. No sections overlap so the information heirarchy isn't disturbed.
-        3. I added multiple hero image files depending on the screen width. I wanted the hero image to be appropriately sized as it is the first thing users see when the open the site.
-
--   #### Returning Visitor Goals
-
-    1. As a Returning Visitor, I want to find out who is behind Blackshaw Theatre and what they do.
-
-        1. The Tell Me More call to action takes users straight to the About section for quick access.
-        2. All of the About images display info about the respective staff member when hovered over, empowering users to see the information they want. This also draws focus to the individual to help users concentrate on what they're looking at.
-
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-        1. Below each show is a call to action to "get in touch" which takes the user to the contact section of the page.
-        2. The whole site has a white background, apart from the contact form. This change of colour creates an emotive response for the user that the interaction on the page has changed, from viewing content, to submitting their own content.
-        3. The footer contains social media links to Blackshaw Theatres pages. Some users are more familiar with communicating through these sites rather than via email, and so may choose to message through there. All links open in seperate tabs to keep focus on the main site.
-
-    3. As a Returning Visitor, I want to find see what kind of presence they have on social media sites
-        1. As mentioned above, should a user wish to simply browse the socials, they have the option to do so with the footer links.
-
--   #### Frequent User Goals
-
-    1. As a Frequent User, I want to check to see if there are any new shows out to see.
-        1. I changed the navigation bar name from "what's on" to "shows" during the site creation. This saved space on smaller screen sizes, allowing the nav bar to remain on one line, and also made it crystal clear what the section was relating to.
-        2. Every show on the site is listed with the same format, making users feel comfortable and in control as they browse the site. This also allows future shows to be easily added or edited by another contributor.
-        3. All shows include a link to the contact form in case users want to find out more.
-
-    2. As a Frequent User, I want to purchase tickets for the shows while still being able to come back to the site
-        1. Next to the "get in touch" button is a link to the relavent page to purchase tickets for the show. All of these pages are trustworthy, and users can feel safe being directed by Blackshaw for their own shows, rather than searching through 3rd party sites.
-
-    3. As a Frequent User, I want to work with the company to produce a show, and speak with the owner directly.
-        1. Throughout the page are CTA's linking to the contact form, and a specific input for businesses/companies to tell Blackshaw who they are.
-        2. In the about section, users are introduced the the owner of Blackshaw Ellie, who managed the emails and social medias herself. When she replies to users they will feel safe knowing they are talking tot the owner, rather than someone else in the company.
-
 ### Further Testing
 
--   The Website was tested on Google Chrome, and Safari on iOS and iPadOS.
--   The website was tested on Chrome, Safari and Firefox on laptop and desktop.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPad Pro, iPhone7, iPhone X, iPhone SE & iPhone 12.
--   A large amount of testing was done to ensure that all pages were linking correctly.
+-   The Website was tested on Google Chrome and Safari, on iOS and iPadOS.
+-   The website was tested on Chrome, Safari and Firefox on laptop.
+-   The website was viewed on a variety of devices such as Laptop, iPad, iPad Pro, iPhone SE, iPhone 12.
+-   A large amount of testing was done to ensure that all pages were linking correctly, and displaying the intended results from the functions
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
--   I tested the page using GoogleDev Tools Lighthouse feature on both mobile and desktop settings
-
-### Lighthouse Results
-
-#### Mobile
-
-![Mobile](assets/readme-content/images/lighthouse-result-mobile.png)
-
-#### Desktop
-
-![Desktop](assets/readme-content/images/lighthouse-result-desktop.png)
+-   regular console logs were done through the development to ensure the correct data is being accessed and stored.
 
 ## Bugs
 
 ### Known Bugs
--   When reducing the site from around 1775px to 1575px, the About section images overlap slightly. The screen sizes I tested the site on do not show this at all, I only noticed it when manually dragging the screen down through these dimensions, as seen here:
-![Known Bug](assets/readme-content/images/bug-1.png)
+-   I had several issues when adding media queries that caused the outer-border and inner-border div that was present for the most part to not surrround all of the content within. I tried several changes to position but ended up replacing it with a single content-container. This does not surround the entire window on certain screens, but I did my best to cover the majority.
 
 ### Fixed Bugs
-- At first the hero image was set within HTML based on mobile device sizes. When it came to making the site responsive, I found it difficult to implement the picture element, and so opted to change this to a background image within CSS. This gave me far more flexibility to style the image, and meant that I could swap the image out with media queries, making the site look much better on all screen sizes.
+- Bug 1: #answer-options being li elements isn’t a best practice, and made it hard to read data from them.
+  
+  Solution: I changed the li elements to a fieldset of radio buttons. This was both a functional and semantic choice, as making a multiple choice quiz using li elements is not the intended purpose for these. When calling and collecting the data in Javascript it will be much easier to do with buttons as they already have a built in “submit” characteristic, where as li’s would have to be manipulated to act as a button, or add the necessary attributes to receive their data, resulting in unnecessary code.
+- Bug 2: Styling radio inputs and labels.
+  
+  Solution: Because radio inputs require a label to work effectively, it meant I had to style the two individually, which was not something I had come across before. I found an amazing way of creating the buttons I wanted, with some extra effects via Ivan Grozdic’s [codeine tutorial](https://codepen.io/ig_design/pen/dLNKgM). The button styling was very complex for what I’d done before, so it took some time just to understand what each selector was actually doing to the html. After a lot of experimentation with removing and changing properties, I was able to apply my own styles to suit the project, making sure that the element IDs and classes were descriptive, and relevant to my project. (See bug 4 for update on this as it is now permanently in the quiz-page section).
 
-- The text overlay on top of the hero image was only featured at the bottom of the screen on the W3Schools tutorial, so I had to figure out how to add it to the top as well. This went through several iterations of position changes, before I separated the text into cover-text-top and cover-text-bottom IDs. This made it much easier to style the text in relation to the hero image.
+- Bug 3: quiz-page elements not keeping their position when moving from question to question.
+    
+    Solution: Due to the content in the answer-options boxes varying so much, the submit button and all option boxes would move around between questions displaying. To fix this, I thought about removing the submit button from the fieldset, and then fixing it in position and using the top and/or bottom properties to style it. This caused problems when I then expanded the window, and didn’t seem like it would be very responsive. After a chat with my mentor Anto, we decided that increasing the height of the fieldset element would leave enough room for the submit button to stay in position regardless of the other elements. I also made adjustments to the answer-options CSS and the question-title for the same reasons. After going through the whole quiz, this worked really well.
 
-- The shows section wouldn't scale into multiple columns like the about section does. I would have liked it to display the show info, with the image below. However it would only split the text on the left, and the images on the right, which wasn't very appealing to look at. I tried the same method I used for the about section, seperating the shows by classes: "show-1, show-2" which gave this result:
-![Show bug 1](assets/readme-content/images/bug-2.png)
+- Bug 4: showNextQuestion() duplicating the evenListener on the submit button each time it was called.
+    
+    Solution: I discovered this bug while testing out solutions for bug 5. When I first added the innerHTML part of this function, i was creating the submit-btn for the quiz within the fieldset as I didn’t know any different. Because of this, I needed to add an eventListener for the submit button, to prevent the default action, and proceed with submitting the answer and displaying the next question. This worked well for a while until bug 2 came around. I chose to remove this element from the showNextQuestion and keep it in the html page, but because the eventListener was still within the function, it was being stored and called over and over, which meant that the scores were being duplicated. By changing the scope of this listener from local to global by putting it at the top of the Javascript file, it meant that it wouldn’t be called multiple times per click.
 
-I then tried adjusting the section as a whole, so that the content of each show div would stay together. However the h2 tag wouldn't stay central, and the buttons from the first show were being cut in half.
-![Show Bug 2](assets/readme-content/images/bug-3.png)
+- Bug 5: results page showing multiple house divs when replaying the quiz. 
+  
+    Solution: After I’d added the results page images so that they would display the correct house. I noticed that when I would return to the menu and play again, the results divs were stacking. I logged the scores at several points, as I believed it was an issue with the collectResultsAndDisplayHouse() function. i went through several iterations of this code, using the original finalScores array info, however it still didn’t work. To fix it I had to break down exactly what I wanted the result to be:
+      1. gather the house scores
+      2. sort them from highest to lowest
+      3. Show the top scoring house div in the html page
 
-I actually fixed this bug as I was writing it down as a known bug. I simply added a container to the shows section, and left the h2 tag outside of it, therefore allowing the h2 to stay central, and giving the buttons enough room beneath the image. This one was very satisfying to fix!
-![Shows Bug Fix](assets/readme-content/images/shows-bug-fix.png)
+    At first I made an overly complicated if/else statement to find the winning result, based on whether the losing results were the first value in the array. Once I did the breakdown however, I realised that I simply needed to “show” the winning result, rather than “hide” everything else. I restructured the finalScores array to give me an elementID (the results IDs from the results-page) and a points score, this way a single line of code: document.getElementById(finalScores[0].elementId).classList.remove('hidden'); allowed me to show the final results. 
+    
+    After all this, the results pages were still duplicating, but I was confident that the collectResultsAndDisplayHouse() function wasn’t the cause. I realised that when resetting the quiz, I wasn’t hiding any of the results pages. To fix this, I added code in the startAgainFromMenu() code to add the hidden class to all results, which worked perfectly.
 
-- The overlay was causing me issues on the about section. I knew that I wanted to implement it quite early on, as I found it while researching image tags on [W3Schools](https://www.w3schools.com/howto/howto_css_image_overlay.asp). Tweaking the CSS properties from the code given took a lot of experimenting, as the positioning was very important to maintain the look of the site. As there are several class selectors, I needed to ensure I was calling the correct HTML, as my class names were different to that of the tutorial. I wanted to make this feature repeatable within a container "staff-bio" in case the client wanted to add any more staff members. At first I had indiviual height and width values for all selectors, however later decided to add inherited values to help with site maintainence.
-
-- As I knew the site would be scaled up, I tried to make all text responsive from the get go, using the vw property to unify all elements of the same type. This worked quite well for mobile and tablet, but meant that desktop text was far too large. I researched more standardised sizings and noticed that major sites such as Apple, Facebook and Youtube had very similar pixel values for the relative elements. After adding these to media queries, and adjusting the primary sizing, the page looked far better when resizing the screen.
 
 ## Deployment
 
@@ -294,13 +241,13 @@ I actually fixed this bug as I was writing it down as a known bug. I simply adde
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Tom-Ainsworth/blackshaw-theatre)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Tom-Ainsworth/sorting-hat-quiz)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
     - Alternatively Click [Here](https://pages.github.com/) for a page with instructions on how to use Github Pages
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Main".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://tom-ainsworth.github.io/blackshaw-theatre/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://tom-ainsworth.github.io/sorting-hat-quiz/) in the "GitHub Pages" section.
 
 ## Credits
 

@@ -71,22 +71,11 @@ The website should have:
 
 -   ### User stories
 
-    -   #### First Time Visitor Goals
-
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to view the site on multiple devices at different times, and want the experience to be the same on all devices.
-
-    -   #### Returning Visitor Goals
-
-        1. As a Returning Visitor, I want to find out who is behind Blackshaw Theatre and what they do.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find see what kind of presence they have on social media sites
-
-    -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any new shows out to see.
-        2. As a Frequent User, I want to purchase tickets for the shows while still being able to come back to the site.
-        3. As a Frequent User, I want to work with the company to produce a show, and speak with the owner directly.
+    -   Here are some example user stories that I factored in when designing the website.
+      - As a Harry Potter fan, I am looking for an easily accessible quiz for me and my friends to play, and find out which house we belong to
+      - As a person new to the franchise, I want to understand what this quiz is and how it relates to the franchise.
+      - As someone who did the Pottermore quiz many years ago, I am interested in reminiscing and seeing if I am still in the same house as before.
+      - As a regular user, I want to test out which combination of answers will put me in a certain house.
 
 -   ### UXD User Experience Design
     -   #### Colour Scheme
